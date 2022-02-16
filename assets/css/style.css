@@ -164,7 +164,22 @@ footer {
     #google-maps {
         grid-column: 4/6;
         max-width: 100%;
-        /* aspect-ratio: 2/1; */
-        /* width: 80%; */
         height: 100%;
+    }
+
+    #social-media-icons-container{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 3rem 0;
+        font-size: 5rem;
+        width: 70%;
+    
+    }
+    .fa-brands{
+        transition: 300ms;
+    }
+    .fa-brands:hover{
+        color: var(--secondary-color);
+        transform: scale(1.1);
     }
