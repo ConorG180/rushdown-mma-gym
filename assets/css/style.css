@@ -146,6 +146,25 @@ padding: 4rem 0 0 0;
 /* Footer */
 footer {
     grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
     border: 0.3rem solid var(--secondary-color-dark);
+    padding: 3.5rem;
     margin-top: 5rem;
 }
+#footer-information-container {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    }
+    
+    #contact-us-container{
+        grid-column: 2/4;
+    }
+    #google-maps {
+        grid-column: 4/6;
+        max-width: 100%;
+        /* aspect-ratio: 2/1; */
+        /* width: 80%; */
+        height: 100%;
+    }
