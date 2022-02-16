@@ -39,7 +39,8 @@ body {
     grid-template-areas: 
     "header header header"
     "hero-img hero-img hero-img"
-    "... gym-class-cards ...";
+    "... gym-class-cards ..."
+    "... about-us ...";
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.4;
@@ -83,8 +84,7 @@ object-fit: cover;
     grid-area: gym-class-cards;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2rem
-    /* grid-template-rows: auto 1fr 1fr; */
+    grid-gap: 2rem;
 }
 
 #gym-class-cards-header {
@@ -100,16 +100,25 @@ padding: 4rem 0 0 0;
     aspect-ratio: 6/4;
     object-fit: cover;
     object-position: center;
-    /* height: 30rem; */
     border-radius: 10px;
 }
+
 .gym-card{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.gym-card-text-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+#about-us {
+    grid-area: about-us;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+#about-us h2{
+    grid-column: 1/7;
+    text-align: center;
+    padding: 3rem 0;
+}
+#about-us-container {
+    grid-column: 2/6;
 }
