@@ -2,12 +2,14 @@
 
 :root {
     /* color scheme */
+--primary-color: #161214;
 --primary-color: #2B2126;
 --secondary-color: #B30606;
 --secondary-color-light: #f00404;
  --secondary-color-dark: #700000; /* #5B0000 */
 --tertiary-color: #8A286F;
 --complimentary-color-light: #06ffff;
+--text-color: #e6f0f5;
 --complimentary-color-dark: #06B3FF;
 
 /* fonts */
