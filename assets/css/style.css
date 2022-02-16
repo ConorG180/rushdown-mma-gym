@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+
+:root {
+    /* color scheme */
+--primary-color: #2B2126;
+--secondary-color: #B30606;
+--secondary-color-light: #f00404;
+ --secondary-color-dark: #700000; /* #5B0000 */
+--tertiary-color: #8A286F;
+--complimentary-color-light: #06ffff;
+--complimentary-color-dark: #06B3FF;
+
+/* fonts */
+--accent-font: "Bebas Neue", ariel, cursive;
+--primary-font: poppins, helvetica, "sans-serif"
+
+}
+
+html{
+ font-size: 62.5%; /*used to set each rem unit to 10 pixels, easier to work with font sizes */
+}
 * {
     padding: 0;
     margin: 0;
@@ -6,4 +27,12 @@
 
 h1 {
     color: red;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.4;
 }
