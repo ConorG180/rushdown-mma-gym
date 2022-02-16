@@ -3,7 +3,6 @@
 :root {
     /* color scheme */
 --primary-color: #161214;
---primary-color: #2B2126;
 --secondary-color: #B30606;
 --secondary-color-light: #f00404;
  --secondary-color-dark: #700000; /* #5B0000 */
@@ -29,16 +28,21 @@ html{
 
 h1 {
     color: var(--secondary-color-light);
+    font-size: 7rem;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px 5px white;
 }
 
 body {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-areas: 
-    "header header header";
+    "header header header"
+    "hero-img hero-img hero-img";;
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.4;
+
 }
 
 header {
@@ -48,6 +52,7 @@ header {
     grid-template-columns: 1fr 3fr 1fr;
     padding: 5rem 0 1rem 0;
     border: 0.3rem solid var(--secondary-color-dark);
+
 }
 header ul {
     grid-column: 2/3;
@@ -57,3 +62,19 @@ header ul {
     list-style-type: none;
 
 }
+#hero-img-container{
+    grid-area: hero-img;
+}
+
+#hero-img-container div{
+    display: flex;
+    justify-content: center;
+}
+
+#hero-img-container img{
+width: 100%;
+max-width: 100%;
+aspect-ratio: 3/1;
+object-fit: cover;
+}
+
