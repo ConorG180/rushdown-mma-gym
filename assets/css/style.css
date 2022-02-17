@@ -97,7 +97,7 @@ object-fit: cover;
     grid-area: gym-class-cards;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2rem;
+    grid-gap: 4rem;
 }
 
 #gym-class-cards-header {
@@ -116,6 +116,7 @@ padding: 4rem 0 0 0;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .gym-card{
@@ -123,13 +124,17 @@ padding: 4rem 0 0 0;
     flex-direction: column;
     align-items: center;
 }
+.gym-card p{
+    padding: 2rem;
+}
 .gym-card button{
     background-color: var(--primary-color);
     color: var(--text-color);
     margin: 1rem 0 3rem 0;
     border: none;
     border-radius: 0 0 1rem 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    background-color: transparent;
 }
 .gym-card button:hover{
     animation-name: shake;
