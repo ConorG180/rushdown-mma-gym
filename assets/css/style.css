@@ -1,20 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
 
 :root {
-    /* color scheme */
+        /* color scheme */
 --primary-color: #161214;
 --secondary-color: #B30606;
 --secondary-color-light: #f00404;
  --secondary-color-dark: #700000; /* #5B0000 */
 --tertiary-color: #8A286F;
---complimentary-color-light: #06ffff;
+--complimentary-color-light: #fbff0fef;
 --text-color: #e6f0f5;
---complimentary-color-dark: #06B3FF;
 
 /* fonts */
 --accent-font: "Bebas Neue", ariel, cursive;
 --primary-font: poppins, helvetica, "sans-serif"
-
 }
 
 html{
@@ -30,7 +28,20 @@ h1 {
     color: var(--secondary-color-light);
     font-size: 7rem;
     letter-spacing: 0.1em;
-    text-shadow: 2px 2px 5px white;
+    text-shadow: 3px 3px 4px white;
+}
+h2{
+    color: var(--secondary-color-light);
+}
+
+h3{
+    color: var(--secondary-color);
+}
+p{
+    color: var(--text-color);
+}
+ul{
+    color: var(--text-color);
 }
 
 body {
@@ -45,7 +56,7 @@ body {
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.4;
-
+    background-color: var(--primary-color);
 }
 
 header {
@@ -55,7 +66,7 @@ header {
     grid-template-columns: 1fr 3fr 1fr;
     padding: 5rem 0 1rem 0;
     border: 0.3rem solid var(--secondary-color-dark);
-
+    color: var(--text-color);
 }
 header ul {
     grid-column: 2/3;
@@ -82,6 +93,7 @@ object-fit: cover;
 }
 
 #gym-class-cards{
+    padding: 2rem 0 4rem 0;
     grid-area: gym-class-cards;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -94,7 +106,9 @@ object-fit: cover;
 grid-column: 1/4;
 padding: 4rem 0 0 0;
 }
-
+#gym-class-cards-header span{
+    color: var(--complimentary-color-light)
+}
 #gym-class-cards img {
     max-width: 100%;
     max-height: 100%;
@@ -109,11 +123,15 @@ padding: 4rem 0 0 0;
     flex-direction: column;
     align-items: center;
 }
-
+.gym-card button{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
 #about-us {
     grid-area: about-us;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    padding: 4rem;
 }
 #about-us h2{
     grid-column: 1/7;
@@ -164,6 +182,7 @@ footer {
     flex-direction: column;
     align-items: space-between;
     }
+
     #google-maps {
         grid-column: 4/6;
         max-width: 100%;
@@ -173,10 +192,16 @@ footer {
     #contact-us-container h2{
         margin-bottom: 2.5rem;
     }
-    
-    #contact-information-container li{
-        padding: 0.5rem;
-    }
+    #contact-information-container li {
+    list-style-type: none;
+}
+#contact-information-container li{
+    padding: 0.5rem;
+}
+.contact-us-icon{
+    margin-right: 1rem;
+    color: var(--secondary-color);
+}
 
     #social-media-icons-container{
         display: flex;
@@ -188,9 +213,10 @@ footer {
     }
     .fa-brands{
         transition: 300ms;
-        color: var(--primary-color)
+        color: var(--secondary-color);
+        -webkit-text-stroke: 0.05px white;
     }
     .fa-brands:hover{
-        color: var(--secondary-color);
+        color: var(--complimentary-color-light);
         transform: scale(1.1);
     }
