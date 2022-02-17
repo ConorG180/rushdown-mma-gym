@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&family=Poppins&display=swap');
 
 :root {
         /* color scheme */
@@ -11,7 +11,8 @@
 --text-color: #e6f0f5;
 
 /* fonts */
---accent-font: "Bebas Neue", ariel, cursive;
+--accent-font: "Bebas Neue", ariel, "sans-serif";
+--accent-font-light:'Oswald', ariel, "sans-serif";
 --primary-font: poppins, helvetica, "sans-serif"
 }
 
@@ -24,24 +25,35 @@ html{
     box-sizing: border-box;
 }
 
-h1 {
+h2,h3{
     color: var(--secondary-color-light);
-    font-size: 7rem;
-    letter-spacing: 0.1em;
+    font-family: var(--accent-font-light);
+    text-align: center;
+}
+
+h1 {
+    font-family: (--accent-font);
+    font-size: 8rem;
+    letter-spacing: 1.1rem;
+    color: var(--secondary-color-light);
     text-shadow: 3px 3px 4px white;
 }
 h2{
-    color: var(--secondary-color-light);
+    font-size: 4.5rem;
+    letter-spacing: 0.25rem;
 }
 
 h3{
-    color: var(--secondary-color);
+    margin-top: 0.5rem;
+    font-size: 2.75rem;
+    letter-spacing: 0.5rem;
 }
 p{
     color: var(--text-color);
 }
 ul{
     color: var(--text-color);
+    font-family: var(--primary-font);
 }
 
 body {
@@ -57,6 +69,8 @@ body {
     font-weight: 400;
     line-height: 1.4;
     background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: var(--primary-font);
 }
 
 header {
@@ -74,7 +88,8 @@ header ul {
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
-
+    font-family: var(--accent-font);
+    font-size: 3rem;
 }
 #hero-img-container{
     grid-area: hero-img;
