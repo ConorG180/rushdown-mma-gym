@@ -126,6 +126,16 @@ padding: 4rem 0 0 0;
 .gym-card button{
     background-color: var(--primary-color);
     color: var(--text-color);
+    margin: 1rem 0 3rem 0;
+    border: none;
+    border-radius: 0 0 1rem 1rem;
+    font-size: 3rem;
+}
+.gym-card button:hover{
+    animation-name: shake;
+    animation-duration: 1500ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
 }
 #about-us {
     grid-area: about-us;
@@ -220,3 +230,28 @@ footer {
         color: var(--complimentary-color-light);
         transform: scale(1.1);
     }
+
+    /* Animations */
+@keyframes shake {
+    0% {
+    transform: rotate(-15deg) translateX(1.5rem);
+    }
+    20% {
+    color: yellow;
+    transform: rotate(15deg) translateX(-1.5rem);
+    }
+    40% {
+    transform: rotate(-15deg) translateX(1.5rem);
+    }
+    60% {
+    color: yellow;
+    transform: rotate(50deg) translateX(-1.5rem);
+    }    
+    80% {
+    transform: rotate(-65deg) translateX(1.5rem);
+    }
+    100% {
+    color: yellow;
+    transform: rotate(-15deg) translateX(1.5rem);
+    }
+} 
