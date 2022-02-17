@@ -39,17 +39,17 @@ h1 {
     text-shadow: 3px 3px 4px white;
 }
 h2{
-    font-size: 4.5rem;
+    font-size: 2.25rem;
     letter-spacing: 0.25rem;
 }
 
 h3{
     margin-top: 0.5rem;
-    font-size: 2.75rem;
+    font-size: 1.85rem;
     letter-spacing: 0.5rem;
 }
 p{
-    color: var(--text-color);
+    font-size: 1.70rem;
 }
 ul{
     color: var(--text-color);
@@ -63,7 +63,7 @@ a{
 
 body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
     "header header header header header"
     "hero-img hero-img hero-img hero-img hero-img"
