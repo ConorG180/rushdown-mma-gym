@@ -310,17 +310,22 @@ footer {
             }
 }
 
-
-/* Tablet/laptop View 768px - 1200px */
-@media only screen and (max-width: 1200px) {
+/* large laptop View 1200px - 1600px */
+@media only screen and (max-width: 1600px) {
     body {
             grid-template-columns: 18rem repeat(3, 1fr) 18rem;
+    }
+
+/* Tablet/small laptop View 768px - 1200px */
+@media only screen and (max-width: 1200px) {
+    body {
+            grid-template-columns: 13rem repeat(3, 1fr) 13rem;
     }
     }
 
     @media only screen and (max-width: 1000px) {
         body {
-            grid-template-columns: 13rem repeat(3, 1fr) 13rem;
+            grid-template-columns: 10rem repeat(3, 1fr) 10rem;
     }
     #gym-class-cards{
         grid-template-columns: 1fr;
