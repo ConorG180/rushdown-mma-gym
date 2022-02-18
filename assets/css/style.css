@@ -63,7 +63,7 @@ a{
 
 body {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 40rem repeat(3, 1fr) 40rem;
     grid-template-areas: 
     "header header header header header"
     "hero-img hero-img hero-img hero-img hero-img"
@@ -169,12 +169,13 @@ padding: 4rem 0 0 0;
 #about-us {
     grid-area: about-us;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    padding: 4rem;
+    grid-template-columns: 45rem minmax(46rem, 87rem);
+    place-self: center;
+    padding: 4rem 0;
     grid-gap: 4rem;
 }
 #about-us h2{
-    grid-column: 1/7;
+    grid-column: 1/3;
     text-align: center;
     padding: 5rem 0 0 1rem;
 }
@@ -186,8 +187,7 @@ padding: 4rem 0 0 0;
     padding-bottom: 2rem;
 }
 #about-us-block{
-    grid-column: 2/4;
-
+    grid-column: 1/2;
 }
 
 #about-us-block ul {
@@ -198,11 +198,13 @@ padding: 4rem 0 0 0;
     padding: 0.5rem;
 }
 #virtual-tour-block{
-    grid-column: 4/7;
+    grid-column: 2/3;
 }
 #virtual-tour-block video {
     max-width: 100%;
+    max-height: 130rem;
     border: 0.3rem solid var(--secondary-color-dark);
+    place-self: center;
 }
 
 /* Footer */
@@ -218,6 +220,7 @@ footer {
     grid-column: 2/3;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    grid-gap: 4rem;
     }
     
     #contact-us-container{
@@ -290,6 +293,43 @@ footer {
     transform: rotate(-15deg) translateX(1.5rem);
     }
 } 
+
+
+/* Monitor View 1400px - 2000px */
+@media only screen and (max-width: 2000px) {
+    body {
+        grid-template-columns: 26rem repeat(3, 1fr) 26rem;
+}
+
+    #gym-class-cards{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4rem;
+        }
+        #gym-class-cards-header {
+            grid-column: 1/3;
+            }
+}
+
+
+/* Tablet/laptop View 768px - 1200px */
+@media only screen and (max-width: 1200px) {
+    body {
+            grid-template-columns: 18rem repeat(3, 1fr) 18rem;
+    }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        body {
+            grid-template-columns: 13rem repeat(3, 1fr) 13rem;
+    }
+    #gym-class-cards{
+        grid-template-columns: 1fr;
+        grid-gap: 4rem;
+        }
+        #gym-class-cards-header {
+            grid-column: 1/2;
+            }
+}
 
 /* Mobile View < 768px */
 @media only screen and (max-width: 768px) {
@@ -418,4 +458,3 @@ margin-bottom: -2rem;
         font-size: 4.5rem;
     }
 }
-
