@@ -88,7 +88,7 @@ header {
     color: var(--text-color);
 }
 header ul {
-    grid-column: 2/3;
+    grid-column: 1/4;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -96,6 +96,7 @@ header ul {
     font-family: var(--accent-font);
     font-size: 3rem;
 }
+
 #hero-img-container{
     grid-area: hero-img;
 }
@@ -318,6 +319,7 @@ footer {
     body {
             grid-template-columns: 11rem repeat(3, 1fr) 11rem;
     }
+
     #about-us {
         grid-template-columns: 1fr;
         padding: 4rem 0 0 0;
