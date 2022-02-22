@@ -39,13 +39,13 @@ h1 {
     text-shadow: 3px 3px 4px white;
 }
 h2{
-    font-size: 2.25rem;
+    font-size: 4.5rem;
     letter-spacing: 0.25rem;
 }
 
 h3{
     margin-top: 0.5rem;
-    font-size: 1.85rem;
+    font-size: 2.5rem;
     letter-spacing: 0.5rem;
 }
 p{
@@ -157,7 +157,7 @@ padding: 4rem 0 0 0;
     color: var(--text-color);
     margin: 1rem 0 3rem 0;
     border: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
     background-color: transparent;
 }
 .gym-card button:hover{
@@ -318,7 +318,9 @@ footer {
     body {
             grid-template-columns: 11rem repeat(3, 1fr) 11rem;
     }
-
+h3{
+    font-size: 2.25rem;
+}
     #about-us {
         grid-template-columns: 1fr;
         grid-gap: 1rem;
@@ -405,11 +407,7 @@ h1 {
 }
 
 h2{
-    font-size: 2.25rem;
-}
-
-h3{
-    font-size: 1.85rem;
+    font-size: 3rem;
 }
 
 p{
@@ -418,7 +416,7 @@ p{
 
 a{
     color: var(--text-color);
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 header {
