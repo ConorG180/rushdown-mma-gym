@@ -266,6 +266,30 @@ footer {
         transform: scale(1.1);
     }
 
+    /* Gallery page */
+
+#gallery-container{
+    border: 2px solid green; /* for visualisation purposes*/
+    grid-column: 1/6;
+    display: grid;
+    grid-template-columns: 20rem 1fr 1fr 1fr 1fr 20rem;
+}
+#gallery{
+    border: 2px solid blue; /* for visualisation purposes*/
+    grid-column: 2/6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.image-holder{
+    grid-column: span 1;
+}
+.image-holder img{
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 2/1;
+}
+
+
     /* Animations */
 @keyframes shake {
     0% {
