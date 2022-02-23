@@ -300,6 +300,7 @@ footer {
 .image-holder{
     background-color: var(--secondary-color-dark);
     padding: 0.4rem 0.5rem;
+    overflow: hidden;
 }
 
 .image-holder img{
@@ -309,7 +310,11 @@ footer {
     max-height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: 500ms;
     /* border: 0.3rem solid var(--secondary-color-dark); */
+}
+.image-holder img:hover{
+    transform: scale(1.2);
 }
 
 /*controlling image row and column spans using utility classes*/
