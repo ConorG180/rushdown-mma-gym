@@ -275,16 +275,41 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 } */
-#gallery-header{
+
+#gallery-header-container{
     grid-column: 2/5;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    grid-template-areas: 
+    "click-message header hover-message";
+    margin-top: 5rem;
+}
+#gallery-header{
     color: var(--secondary-color-light);
     font-family: var(--accent-font-light);
+    grid-area: header;
     text-shadow: none;
     letter-spacing: 0.25rem;
     font-size: 4.5rem;
     text-align: center;
-    margin-top: 3rem;
     padding: 2rem;
+}
+#gallery-click-message,#gallery-hover-message{
+    color: var(--complimentary-color-light);
+    font-family: var(--accent-font-light);
+    text-shadow: none;
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+    text-align: start;
+    align-self: end;
+    padding: 1rem;
+}
+#gallery-click-message{
+    grid-area: click-message;
+}
+#gallery-hover-message{
+    grid-area: hover-message;
+    justify-self: end;
 }
 #gallery{
     grid-column: 2/5;
