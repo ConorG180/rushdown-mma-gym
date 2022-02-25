@@ -615,35 +615,32 @@ header ul {
     }  
     /*gallery */
     #gallery-header-container{
-        grid-column: 1/4;
-    grid-template-columns: max-content 3fr max-content;
+        grid-column: 2/3;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "header header header"
-    "click-message ... hover-message";
-    margin-top: 5rem;
     }
     #gallery-header{
-        font-size: 2.25rem;
+        font-size: 1.9rem;
     }
     #gallery-click-message,#gallery-hover-message{
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
     #gallery{
         grid-column: 1/4;
-        grid-template-columns: 1fr;
+        grid-template-columns: 4rem 1fr 4rem;
+        grid-gap: 0.5rem;
     }
     .image-holder{
         grid-column: 2/3;
+        padding: 0.3rem;
     }
     
 /*controlling image row and column spans using utility classes*/
 .landscape{
-    grid-column: 1/4;
+    grid-column: 2/3;
     grid-row: span 1;
 }
 .big-landscape{
-    grid-column: 1/4;
+    grid-column: 2/3;
     grid-row: span 1;
 }
 }
