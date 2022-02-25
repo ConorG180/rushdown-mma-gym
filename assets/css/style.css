@@ -55,12 +55,27 @@ ul{
     color: var(--text-color);
     font-family: var(--primary-font);
 }
-
 a{
     color: var(--text-color);
     font-size: 4rem;
+    position: relative;
+    text-decoration: none;
 }
-
+/* For navbar hover effect */
+a:after {
+    width: 0;
+    content: "";
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0px;
+    background-color: var(--secondary-color);
+    height: 0.4rem;
+    transition: width 400ms, background-color 1200ms;
+}
+a:hover:after {
+    width: 100%;
+    background-color: var(--complimentary-color-light);
+}
 body {
     display: grid;
     grid-template-columns: 40rem repeat(3, 1fr) 40rem;
@@ -568,8 +583,11 @@ h2{
 }
 
 a{
-    color: var(--text-color);
     font-size: 2.5rem;
+}
+/* For navbar hover effect at smaller screens */
+a:after{
+    bottom: 0;
 }
 
 header {
