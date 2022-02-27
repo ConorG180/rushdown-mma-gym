@@ -416,6 +416,22 @@ transform: scale(1);
     grid-row: span 3;
 }
 
+/* Sign up page */
+#sign-up-form{
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+    "image image" 
+    "membership-form free-trial-form";
+}
+#sign-up-form img{
+    grid-area: image;
+}
+#free-trial-container{
+    grid-area: free-trial-form;
+}
+
     /* Animations */
 @keyframes shake {
     0% {
