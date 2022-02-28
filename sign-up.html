@@ -37,10 +37,84 @@
     </header>
     <section id="sign-up-form">
         <img>
+        <div class="membership-form-container">
+            <h2>Join the team!</h2>
+            <form id = "membership-form">
+                <div>
+                    <input type="text" id="first-name" name="first-name">
+                    <label for = "first-name">
+                        First Name
+                    </label>
+                    <input type="text" id="last-name" name="last-name">
+                    <label for = "last-name">
+                        Last Name
+                    </label>
+                    <input type="email" id="email" name="email">
+                    <label for = "email">
+                        Email
+                    </label>
+                    <input type="number" id="phone-number" name="phone-number">
+                    <label for = "phone-number">
+                        Phone Number
+                    </label>
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="undisclosed">Prefer not to say</option>
+                      </select>
+                      <label for = "gender">
+                        Gender
+                      </label>
+                      <input type="date" id="dob" name="dob" min="1900-01-01">
+                      <label>
+                        Date of Birth
+                      </label>
+        <input type="checkbox" id="brazillian-jiu-jitsu" name="interest" value="true">
+        <label for="brazillian-jiu-jitsu">Brazillian-jiu-jitsu</label>
+        <input type="checkbox" id="wrestling" name="interest" value="true">
+        <label for="wrestling">Wrestling</label>
+        <input type="checkbox" id="muay-thai" name="interest" value="true">
+        <label for="muay-thai">Muay-thai</label>
+        <input type="checkbox" id="mma" name="interest" value="true">
+        <label for="mma">MMA</label>
+        <input type="checkbox" id="yoga" name="interest" value="true">
+        <label for="yoga">Yoga</label>
+        <input type="checkbox" id="boxing" name="interest" value="true">
+        <label for="boxing">Boxing</label>
+        <textarea id="medical" name="medical-history" rows="8" cols="50">
+        </textarea>
+        <label for = "medical">
+            Do you suffer from any serious medical conditions or have you had any surgical operations we should know about?
+        </label>
+        <div>
+            <div>
+                <img src = "" alt = "">
+                <h3>Monthly</h3>
+                <input type="radio" id="monthly-membership" name="chosen-membership" value="Monthly">
+                <label for="monthly-membership">€40 per month</label>
+            </div>
+            <div>
+                <img src = "" alt = "">
+                <h3>Quarterly</h3>
+                <input type="radio" id="quarterly-membership" name="chosen-membership" value="Quarterly">
+                <label for="quarterly-membership">€100 per 3 months</label>
+            </div>
+            <div>
+                <img src = "" alt = "">
+                <h3>Biannual</h3>
+                <input type="radio" id="biannual-membership" name="chosen-membership" value="Biannual">
+                <label for="biannual-membership">€170 per 6 months</label>
+            </div>
+        </div>
+        <input type = "submit"></input>
+                </div>
+            </form>
+        </div>
         <div id = "free-trial-container">
-            <p>Placeholder text</p>
-            <p>Placeholder text</p>
-            <form>
+            <h2>Free trial?</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut iusto blanditiis dolore dignissimos ipsa autem reiciendis non totam eum pariatur, voluptas fugit, molestiae, incidunt distinctio recusandae natus ducimus ab minus! Illum, maiores! Totam ut reiciendis ullam ipsam veritatis ratione sequi dolorum eveniet, dolore id natus dolor, ex asperiores odit! Tempora iste inventore at quas esse modi veritatis sunt reiciendis odio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque corporis nisi veniam impedit est autem! Dolor placeat minus quaerat, nobis cumque corporis porro et repellendus, consectetur iure fugit reiciendis debitis excepturi vero at quo. Optio assumenda natus ad, cupiditate consequatur sequi sint quibusdam quae, exercitationem at animi enim! Reprehenderit voluptates inventore in vitae ad dignissimos aut error enim dolor rerum.</p>
+            <form id = "free-trial-form">
                 <input type="radio" id="brazillian-jiu-jitsu-trial" name="chosen-free-trial" value="Brazillian-jiu-jitsu">
                 <label for="brazillian-jiu-jitsu-trial">Brazillian-jiu-jitsu</label>
                 <input type="radio" id="wrestling-trial" name="chosen-free-trial" value="Wrestling">
