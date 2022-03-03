@@ -420,6 +420,7 @@ transform: scale(1);
 #sign-up-form{
     grid-column: 2/5;
     display: grid;
+    grid-gap: 10rem;
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
     "image image" 
@@ -428,10 +429,164 @@ transform: scale(1);
 #sign-up-form img{
     grid-area: image;
 }
+#sign-up-form input, #sign-up-form select, #sign-up-form textarea{
+    border-radius: 1rem;
+}
+#sign-up-form select:focus, #sign-up-form input:focus, #sign-up-form textarea:focus {
+    outline: 2px solid var(--secondary-color-dark);
+}
 #free-trial-container{
     grid-area: free-trial-form;
 }
-
+#membership-form-container{
+   grid-area: membership-form;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.form-element-container{
+    padding: 1rem;
+    width: 40rem;
+}
+.form-element-container input{
+width: 100%;
+height: 4rem;
+}
+.form-element-container label{
+    width: 100%;
+}
+.form-element-container select{
+    height: 4rem;
+    width: 100%;
+}
+#membership-form-container h2{
+    grid-column: 1/3;
+    padding-bottom: 3rem;
+}
+#membership-form{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 10rem 1fr 1fr 10rem;
+    grid-template-rows: repeat(6, auto) 20rem;
+     /* to make membership options have more length grid-template-rows: repeat(6, auto) 30rem; */
+}
+#membership-form label{
+   display: block;
+}
+#first-name-container{
+    grid-column: 2/3;
+}
+#last-name-container{
+    grid-column: 3/4;
+    justify-self: end;
+}
+#email-container{
+    grid-column: 2/3;
+}
+#phone-number-container{
+    grid-column: 3/4;
+    justify-self: end;
+}
+#gender-container{
+    grid-column: 2/3;
+}
+#dob-container{
+    grid-column: 3/4;
+    justify-self: end;
+}
+#classes-question{
+    grid-column: 2/4;
+    font-size: 2rem;
+    padding-left: 2.25rem;
+    padding-top: 3.5rem;
+    text-align: center;
+    margin-bottom: -2rem;
+}
+#classes-container{
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);   /* //try use repeat autofill here (auto-fill, minmax(10rem, 1fr) )*/
+    width: auto;
+    padding: 2rem 0;
+    /* max-width: 100%; */
+}
+ .checkbox-container{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+} 
+.checkbox-container label{
+    padding: 0 1rem;
+    font-size: 1.7rem;
+}
+.checkbox-container input {
+height: 2rem;
+width: 2rem;
+} 
+#medical-history-container{
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: none;
+    justify-self: center;
+    width: 100%;
+}
+#medical-history{
+    width: 100%;
+    justify-self: center;
+}
+#medical-history-container label{
+    padding: 1rem 0;
+    text-align: center;
+}
+.membership-options{
+    grid-column: 2/4;
+    grid-row: 7/8;
+    display: grid;
+     grid-template-columns: repeat(2, 1fr) repeat(3, minmax(20rem, 25rem)) repeat(2, 1fr); /* to indent subscription options */
+    grid-gap: 1.5rem;
+    width: 100%;
+}
+.subscription-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    justify-self: center;
+}
+.subscription-container h3{
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+}
+.subscription-container input{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+}
+.subscription-container label{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+.radio-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#monthly-container{
+grid-column-start: 3;
+}
+#quarterly-container{
+grid-column-start: 4;
+}
+#biannual-container{
+grid-column-start: 5;
+}
+#membership-submit-button{
+    grid-column: 2/4;
+    justify-self: center;
+    margin: 1rem;
+    padding: 2rem;
+}
     /* Animations */
 @keyframes shake {
     0% {
