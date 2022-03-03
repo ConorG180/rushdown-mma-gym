@@ -500,6 +500,7 @@ height: 4rem;
     padding-top: 3.5rem;
     text-align: center;
     margin-bottom: -2rem;
+    font-size: 2rem;
 }
 #classes-container{
     grid-column: 2/4;
@@ -543,19 +544,26 @@ width: 2rem;
     grid-row: 7/8;
     display: grid;
      grid-template-columns: repeat(2, 1fr) repeat(3, minmax(20rem, 25rem)) repeat(2, 1fr); /* to indent subscription options */
-    grid-gap: 1.5rem;
+    grid-gap: 2.5rem;
     width: 100%;
+    padding-top: 2rem;
 }
 .subscription-container{
     display: flex;
     flex-direction: column;
     justify-content: start;
     justify-self: center;
+    border-radius: 1rem;
+    border: 2px solid var(--secondary-color-dark);
+    width: 100%;
 }
 .subscription-container h3{
-    width: 100%;
     padding: 1rem;
     margin: 0;
+    background-color: var(--secondary-color-dark);
+    color: var(--text-color);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
 }
 .subscription-container input{
     width: 2rem;
@@ -584,8 +592,12 @@ grid-column-start: 5;
 #membership-submit-button{
     grid-column: 2/4;
     justify-self: center;
-    margin: 1rem;
+    margin: 2rem;
     padding: 2rem;
+    background-color: #B30606;
+    color: var(--text-color);
+    font-size: 4rem;
+    width: 100%;
 }
     /* Animations */
 @keyframes shake {
