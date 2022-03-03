@@ -37,77 +37,107 @@
     </header>
     <section id="sign-up-form">
         <img>
-        <div class="membership-form-container">
+        <div id="membership-form-container">
             <h2>Join the team!</h2>
             <form id = "membership-form">
-                <div>
-                    <input type="text" id="first-name" name="first-name">
+                <div class = "form-element-container" id = "first-name-container">
                     <label for = "first-name">
                         First Name
                     </label>
-                    <input type="text" id="last-name" name="last-name">
-                    <label for = "last-name">
-                        Last Name
-                    </label>
-                    <input type="email" id="email" name="email">
+                    <input type="text" id="first-name" name="first-name">
+                </div>
+                    <div class="form-element-container" id="last-name-container">
+                        <label for = "last-name">
+                            Last Name
+                        </label>
+                    <input type="text" id="last-name" name="last-name">         
+                </div>
+                <div class="form-element-container" id="email-container">
                     <label for = "email">
                         Email
                     </label>
-                    <input type="number" id="phone-number" name="phone-number">
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-element-container" id="phone-number-container">
                     <label for = "phone-number">
                         Phone Number
                     </label>
+                    <input type="number" id="phone-number" name="phone-number">
+                </div>
+                <div class="form-element-container" id="gender-container">
+                    <label for = "gender">
+                        Gender
+                      </label>
                     <select name="gender" id="gender">
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="undisclosed">Prefer not to say</option>
                       </select>
-                      <label for = "gender">
-                        Gender
-                      </label>
+                    </div>
+                      <div class="form-element-container" id="dob-container">
+                        <label>
+                            Date of Birth
+                          </label>
                       <input type="date" id="dob" name="dob" min="1900-01-01">
-                      <label>
-                        Date of Birth
-                      </label>
-        <input type="checkbox" id="brazillian-jiu-jitsu" name="interest" value="true">
-        <label for="brazillian-jiu-jitsu">Brazillian-jiu-jitsu</label>
-        <input type="checkbox" id="wrestling" name="interest" value="true">
-        <label for="wrestling">Wrestling</label>
-        <input type="checkbox" id="muay-thai" name="interest" value="true">
-        <label for="muay-thai">Muay-thai</label>
-        <input type="checkbox" id="mma" name="interest" value="true">
-        <label for="mma">MMA</label>
-        <input type="checkbox" id="yoga" name="interest" value="true">
-        <label for="yoga">Yoga</label>
-        <input type="checkbox" id="boxing" name="interest" value="true">
-        <label for="boxing">Boxing</label>
-        <textarea id="medical" name="medical-history" rows="8" cols="50">
-        </textarea>
-        <label for = "medical">
-            Do you suffer from any serious medical conditions or have you had any surgical operations we should know about?
-        </label>
-        <div>
-            <div>
-                <img src = "" alt = "">
+                    </div>
+                    <p id = "classes-question">What martial arts do you have an interest in pursuing?</p>
+                    <div class="form-element-container" id = "classes-container">
+                        <div class = "checkbox-container">
+                        <input type="checkbox" id="brazillian-jiu-jitsu" name="interest" value="true">
+                        <label for="brazillian-jiu-jitsu">Brazillian-jiu-jitsu</label>
+                          </div>
+                          <div class = "checkbox-container">
+                        <input type="checkbox" id="wrestling" name="interest" value="true">
+                        <label for="wrestling">Wrestling</label>
+                    </div>
+                    <div class = "checkbox-container">
+                        <input type="checkbox" id="muay-thai" name="interest" value="true">
+                        <label for="muay-thai">Muay-thai</label>
+                    </div>
+                    <div class = "checkbox-container">
+                        <input type="checkbox" id="mma" name="interest" value="true">
+                        <label for="mma">MMA</label>
+                    </div>
+                    <div class = "checkbox-container">
+                        <input type="checkbox" id="yoga" name="interest" value="true">
+                        <label for="yoga">Yoga</label>
+                    </div>
+                    <div class = "checkbox-container">
+                        <input type="checkbox" id="boxing" name="interest" value="true">
+                        <label for="boxing">Boxing</label>
+                    </div>
+                     </div>
+                     <div class="form-element-container" id = "medical-history-container">
+                        <label for = "medical">
+                            Do you suffer from any serious medical conditions or have you had any surgical operations we should know about?
+                        </label>
+        <textarea id="medical-history" name="medical-history" rows="8" cols="50"></textarea>
+    </div>
+        <div class="form-element-container membership-options">
+            <div class = "subscription-container" id = "monthly-container">
                 <h3>Monthly</h3>
+                <div class = "radio-container">
                 <input type="radio" id="monthly-membership" name="chosen-membership" value="Monthly">
-                <label for="monthly-membership">€40 per month</label>
+                <label for="monthly-membership">1 month<br>€100</label>
             </div>
-            <div>
-                <img src = "" alt = "">
+            </div>
+            <div class = "subscription-container" id = "quarterly-container">
                 <h3>Quarterly</h3>
+                <div class = "radio-container">
                 <input type="radio" id="quarterly-membership" name="chosen-membership" value="Quarterly">
-                <label for="quarterly-membership">€100 per 3 months</label>
+                <label for="quarterly-membership">3 months<br>€100</label>
             </div>
-            <div>
-                <img src = "" alt = "">
+            </div>
+            <div class = "subscription-container" id = "biannual-container">
                 <h3>Biannual</h3>
+                <div class = "radio-container">
                 <input type="radio" id="biannual-membership" name="chosen-membership" value="Biannual">
-                <label for="biannual-membership">€170 per 6 months</label>
+                <label for="biannual-membership">6 months<br>€170</label>
+            </div>
             </div>
         </div>
-        <input type = "submit"></input>
-                </div>
+        <input type = "submit" id = "membership-submit-button"></input>
+                
             </form>
         </div>
         <div id = "free-trial-container">
@@ -147,7 +177,6 @@
                     <i class="fa-solid fa-location-dot contact-us-icon"></i> 3, Old Cabra Road, Dublin 7, Ireland
                 </li>
             </ul>
-            <!-- instagram, facebook, youtube, snapchat, and twitter icons to go in ul below here -->
             <ul id = "social-media-icons-container">
                 <li>
                     <a href = "https://www.instagram.com/?hl=en" target = _blank>
