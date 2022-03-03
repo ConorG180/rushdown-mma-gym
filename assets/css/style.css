@@ -418,13 +418,12 @@ transform: scale(1);
 
 /* Sign up page */
 #sign-up-form{
-    grid-column: 2/5;
+    grid-column: 1/6;
     display: grid;
-    grid-gap: 10rem;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 20rem 2fr 1fr 20rem;
     grid-template-areas:
-    "image image" 
-    "membership-form free-trial-form";
+    ". image image ." 
+    ". membership-form free-trial-form .";
 }
 #sign-up-form img{
     grid-area: image;
@@ -435,9 +434,7 @@ transform: scale(1);
 #sign-up-form select:focus, #sign-up-form input:focus, #sign-up-form textarea:focus {
     outline: 2px solid var(--secondary-color-dark);
 }
-#free-trial-container{
-    grid-area: free-trial-form;
-}
+/* Membership form  */
 #membership-form-container{
    grid-area: membership-form;
    display: grid;
@@ -508,16 +505,18 @@ height: 4rem;
     grid-template-columns: repeat(6, 1fr);   /* //try use repeat autofill here (auto-fill, minmax(10rem, 1fr) )*/
     width: auto;
     padding: 2rem 0;
+    justify-self: center;
     /* max-width: 100%; */
 }
  .checkbox-container{
     display: flex;
     align-items: center;
-    justify-self: center;
+    justify-self: end;
 } 
 .checkbox-container label{
     padding: 0 1rem;
     font-size: 1.7rem;
+    text-align: center;
 }
 .checkbox-container input {
 height: 2rem;
@@ -591,6 +590,58 @@ grid-column-start: 5;
 }
 #membership-submit-button{
     grid-column: 2/4;
+    justify-self: center;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #B30606;
+    color: var(--text-color);
+    font-size: 4rem;
+    width: 100%;
+}
+
+/* Free Trial form */
+#free-trial-container{
+    grid-area: free-trial-form;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10rem 25rem 25rem 1fr;
+}
+#free-trial-container h2{
+    grid-column: 1/3;
+}
+#free-trial-container p{
+    grid-column: 1/3;
+    text-align: center;
+}
+#free-trial-container form{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+#trials-question{
+    grid-column: 1/3;
+    font-size: 2rem;
+    justify-self: start;
+    font-size: 2rem;
+}
+#free-trial-classes{
+grid-column: 1/3;
+display: grid;
+grid-template-columns: 1fr 1fr;
+font-size: 1.7rem;
+justify-self: center;
+}
+#free-trial-classes div:nth-child(even){
+    justify-self: start;
+    padding-right: 5rem;
+}
+#free-trial-classes div:nth-child(odd){
+    justify-self: start;
+    padding-left: 5rem;
+}
+#free-trial-submit-button{
+    grid-column: 1/3;
     justify-self: center;
     margin: 2rem;
     padding: 2rem;
