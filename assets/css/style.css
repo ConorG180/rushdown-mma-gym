@@ -417,13 +417,14 @@ transform: scale(1);
 }
 
 /* Sign up page */
-#sign-up-form{
+#sign-up-form{ /* contains membership form and free trial form */
     grid-column: 1/6;
     display: grid;
-    grid-template-columns: 20rem 2fr 1fr 20rem;
+    grid-template-columns: 20rem 2fr 5rem 1fr 20rem;
+    grid-template-rows: 1fr;
     grid-template-areas:
-    ". image image ." 
-    ". membership-form free-trial-form .";
+    ". image image image ." 
+    ". membership-form . free-trial-form .";
 }
 #sign-up-form img{
     grid-area: image;
@@ -442,7 +443,7 @@ transform: scale(1);
 }
 .form-element-container{
     padding: 1rem;
-    width: 40rem;
+    width: auto;
 }
 .form-element-container input{
 width: 100%;
@@ -462,68 +463,55 @@ height: 4rem;
 #membership-form{
     grid-column: 1/3;
     display: grid;
-    grid-template-columns: 10rem 1fr 1fr 10rem;
-    grid-template-rows: repeat(6, auto) 20rem;
+    grid-template-columns: 1fr 1fr 10rem;
+    grid-template-rows: repeat(6, auto) 1fr;
      /* to make membership options have more length grid-template-rows: repeat(6, auto) 30rem; */
 }
 #membership-form label{
    display: block;
 }
-#first-name-container{
+#first-name-container,#email-container,#gender-container{
+    grid-column: 1/2;
+}
+#last-name-container,#phone-number-container,#dob-container{
     grid-column: 2/3;
-}
-#last-name-container{
-    grid-column: 3/4;
-    justify-self: end;
-}
-#email-container{
-    grid-column: 2/3;
-}
-#phone-number-container{
-    grid-column: 3/4;
-    justify-self: end;
-}
-#gender-container{
-    grid-column: 2/3;
-}
-#dob-container{
-    grid-column: 3/4;
-    justify-self: end;
 }
 #classes-question{
-    grid-column: 2/4;
+    grid-column: 1/3;
     font-size: 2rem;
-    padding-left: 2.25rem;
+    /* padding-left: 2.25rem; */
     padding-top: 3.5rem;
-    text-align: center;
-    margin-bottom: -2rem;
+    text-align: start;
     font-size: 2rem;
 }
 #classes-container{
-    grid-column: 2/4;
+    grid-column: 1/3;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);   /* //try use repeat autofill here (auto-fill, minmax(10rem, 1fr) )*/
-    width: auto;
+    grid-template-columns: repeat(3, 1fr);   /* //try use repeat autofill here (auto-fill, minmax(10rem, 1fr) )*/
+    width: 100%;
     padding: 2rem 0;
     justify-self: center;
     /* max-width: 100%; */
 }
  .checkbox-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 5rem 12rem;
     align-items: center;
-    justify-self: end;
+    justify-content: center;
+    justify-self: center;
+    padding: 1rem 0;
 } 
 .checkbox-container label{
     padding: 0 1rem;
     font-size: 1.7rem;
-    text-align: center;
+    text-align: start;
 }
 .checkbox-container input {
-height: 2rem;
-width: 2rem;
+height: 4rem;
+width: 4rem;
 } 
 #medical-history-container{
-    grid-column: 2/4;
+    grid-column: 1/3;
     display: grid;
     grid-template-columns: 1fr;
     max-width: none;
@@ -539,10 +527,9 @@ width: 2rem;
     text-align: center;
 }
 .membership-options{
-    grid-column: 2/4;
-    grid-row: 7/8;
+    grid-column: 1/3;
     display: grid;
-     grid-template-columns: repeat(2, 1fr) repeat(3, minmax(20rem, 25rem)) repeat(2, 1fr); /* to indent subscription options */
+     grid-template-columns: repeat(2, 1fr) repeat(3, minmax(12.5rem, 25rem)) repeat(2, 1fr); /* to indent subscription options */
     grid-gap: 2.5rem;
     width: 100%;
     padding-top: 2rem;
@@ -551,7 +538,6 @@ width: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    justify-self: center;
     border-radius: 1rem;
     border: 2px solid var(--secondary-color-dark);
     width: 100%;
@@ -589,7 +575,7 @@ grid-column-start: 4;
 grid-column-start: 5;
 }
 #membership-submit-button{
-    grid-column: 2/4;
+    grid-column: 1/3;
     justify-self: center;
     margin: 2rem;
     padding: 2rem;
@@ -604,7 +590,7 @@ grid-column-start: 5;
     grid-area: free-trial-form;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10rem 25rem 25rem 1fr;
+    grid-template-rows: 20% 20% 20% 20% 20%;
 }
 #free-trial-container h2{
     grid-column: 1/3;
@@ -615,14 +601,16 @@ grid-column-start: 5;
 }
 #free-trial-container form{
     grid-column: 1/3;
+    grid-row: 4/6;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    
+    /* grid-template-rows: 2fr 1fr; */
 }
 #trials-question{
     grid-column: 1/3;
     font-size: 2rem;
-    justify-self: start;
+    justify-self: center;
     font-size: 2rem;
 }
 #free-trial-classes{
@@ -630,25 +618,29 @@ grid-column: 1/3;
 display: grid;
 grid-template-columns: 1fr 1fr;
 font-size: 1.7rem;
-justify-self: center;
 }
-#free-trial-classes div:nth-child(even){
+#free-trial-classes div{
     justify-self: start;
     padding-right: 5rem;
+    display: grid;
+    grid-template-columns: 5rem 10rem;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    padding: 1rem 0;
 }
-#free-trial-classes div:nth-child(odd){
-    justify-self: start;
-    padding-left: 5rem;
-}
+
 #free-trial-submit-button{
     grid-column: 1/3;
     justify-self: center;
-    margin: 2rem;
+    align-self: end;
+    margin: 2rem 0;
     padding: 2rem;
     background-color: #B30606;
     color: var(--text-color);
     font-size: 4rem;
     width: 100%;
+    height: 9rem;
 }
     /* Animations */
 @keyframes shake {
@@ -676,19 +668,66 @@ justify-self: center;
 } 
 
 
-/* Monitor View 1400px - 2000px */
+/* Monitor View 1600px - 2000px */
 @media only screen and (max-width: 2000px) {
     body {
         grid-template-columns: 26rem repeat(3, 1fr) 26rem;
 }
+#gym-class-cards{
+grid-template-columns: 1fr 1fr;
+grid-gap: 4rem;
+}
+#gym-class-cards-header {
+grid-column: 1/3;
+}
+/* sign up page */
+#sign-up-form{
+grid-template-columns: minmax(0,20rem) 1fr 8rem 1fr minmax(0,20rem);
+grid-template-areas:
+". image image image ." 
+". membership-form . free-trial-form .";
+}
+#membership-form-container{
+    grid-template-columns: 1fr;
+}
+#membership-form{
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: minmax(50rem, 1fr);
+}
+#last-name-container,#phone-number-container,#dob-container{
+    grid-column: 1/2;
+}
+#classes-question{
+    text-align: start;
+}
+#classes-container{
+    grid-column: 1/2;
+}
+#medical-history-container{
+    grid-column: 1/2;
+}
+.membership-options{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/2;
+}
 
-    #gym-class-cards{
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 4rem;
-        }
-        #gym-class-cards-header {
-            grid-column: 1/3;
-            }
+#monthly-container{
+    grid-column-start: 1;
+    }
+    #quarterly-container{
+    grid-column-start: 2;
+    }
+    #biannual-container{
+    grid-column-start: 3;
+    }
+    #membership-submit-button{
+        grid-column: 1/2;
+    }
+    #free-trial-submit-button{
+        justify-self: end;
+        width: 100%;
+    }
 }
 
 /* large laptop View 1200px - 1600px */
@@ -696,7 +735,31 @@ justify-self: center;
     body {
             grid-template-columns: 18rem repeat(3, 1fr) 18rem;
     }
-
+    .subscription-container h3{
+        font-size: 1.75rem;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    #sign-up-form{
+        grid-template-columns: minmax(0,7rem) 1fr minmax(0,7rem);
+        grid-gap: 5rem;
+        grid-template-areas:
+        ". image ." 
+        ". membership-form ."
+        ". free-trial-form ."
+        ;
+        }
+        #free-trial-container{
+            grid-area: free-trial-form;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(5, auto);
+        
+        }
+        #free-trial-container p, #free-trial-container h2,#free-trial-classes{
+        margin-bottom: 3rem;
+        }
+    }
 /* Tablet/small laptop View 768px - 1200px */
 @media only screen and (max-width: 1200px) {
     body {
@@ -746,6 +809,8 @@ h3{
 .big-portrait{
     grid-column: span 1;
     grid-row: span 2;
+}
+
 }
     @media only screen and (max-width: 1000px) {
         body {
@@ -876,5 +941,23 @@ header ul {
 .big-landscape{
     grid-column: 2/3;
     grid-row: span 1;
+}
+/* sign up page */
+#membership-form{
+    grid-template-columns: minmax(35rem, 1fr);
+}
+#sign-up-form{
+    grid-template-columns: 1fr;
+}
+.membership-options{
+    grid-template-columns: 5rem 1fr 5rem;
+    grid-template-rows: 15rem 15rem 15rem;
+}
+
+#monthly-container,#quarterly-container,#biannual-container{
+    grid-column-start: 2;
+    }
+    #classes-container{
+        grid-template-columns: repeat(2, 1fr);
 }
 }
