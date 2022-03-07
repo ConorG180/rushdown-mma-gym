@@ -245,7 +245,6 @@ footer {
 
     #social-media-icons-container{
         display: flex;
-        /* justify-content: start; */
         list-style-type: none;
         padding-top: 3rem;
         font-size: 5rem;
@@ -254,7 +253,6 @@ footer {
     .fa-brands{
         transition: 300ms;
         color: var(--secondary-color);
-        -webkit-text-stroke: 0.05px white;
         padding-right: 3rem;
     }
 
@@ -640,7 +638,7 @@ font-size: 1.7rem;
 /* Hover effects */
 
 /* For navbar and image color effect on hover */
-a:after {
+header a:after, #gallery a:after {
     width: 0;
     content: "";
     position: absolute;
@@ -650,14 +648,11 @@ a:after {
     height: 0.4rem;
     transition: width 400ms, background-color 1200ms;
 }
-a:hover:after {
+header a:hover:after, #gallery a:hover:after {
     width: 100%;
     background-color: var(--complimentary-color-light);
 }
-/* For navbar hover effect at smaller screens */
-a:after{
-    bottom: 0;
-}
+
 /* Image zoom effect on hover */
 .image-holder:hover img{
     transform: scale(1.25);
@@ -894,10 +889,12 @@ h2{
 a{
     font-size: 2.5rem;
 }
-
-
 header {
     padding: 2rem 0;
+}
+/* For navbar hover effect at smaller screens */
+header a:after{
+    bottom: 0;
 }
 #hero-img-container img {
     height: 30rem;
