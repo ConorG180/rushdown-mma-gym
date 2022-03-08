@@ -44,31 +44,31 @@
                     <label for = "first-name">
                         First Name
                     </label>
-                    <input type="text" id="first-name" name="first-name">
+                    <input type="text" id="first-name" name="first-name" required>
                 </div>
                     <div class="form-element-container" id="last-name-container">
                         <label for = "last-name">
                             Last Name
                         </label>
-                    <input type="text" id="last-name" name="last-name">         
+                    <input type="text" id="last-name" name="last-name" required>         
                 </div>
                 <div class="form-element-container" id="email-container">
                     <label for = "email">
                         Email
                     </label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-element-container" id="phone-number-container">
                     <label for = "phone-number">
                         Phone Number
                     </label>
-                    <input type="number" id="phone-number" name="phone-number">
+                    <input type="number" id="phone-number" name="phone-number" required>
                 </div>
                 <div class="form-element-container" id="gender-container">
                     <label for = "gender">
                         Gender
                       </label>
-                    <select name="gender" id="gender">
+                    <select name="gender" id="gender" required>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="undisclosed">Prefer not to say</option>
@@ -78,7 +78,7 @@
                         <label>
                             Date of Birth
                           </label>
-                      <input type="date" id="dob" name="dob" min="1900-01-01">
+                      <input type="date" id="dob" name="dob" min="1900-01-01" required>
                     </div>
                     <p id = "classes-question">What martial arts do you have an interest in pursuing?</p>
                     <div class="form-element-container" id = "classes-container">
@@ -111,13 +111,13 @@
                         <label for = "medical">
                             Do you suffer from any serious medical conditions or have you had any surgical operations we should know about?
                         </label>
-        <textarea id="medical-history" name="medical-history" rows="8" cols="50"></textarea>
+        <textarea id="medical-history" name="medical-history" rows="8" cols="50" required></textarea>
     </div>
         <div class="form-element-container membership-options">
             <div class = "subscription-container" id = "monthly-container">
                 <h3>Monthly</h3>
                 <div class = "radio-container">
-                <input type="radio" id="monthly-membership" name="chosen-membership" value="Monthly">
+                <input type="radio" id="monthly-membership" name="chosen-membership" value="Monthly" required>
                 <label for="monthly-membership">1 month<br>€100</label>
             </div>
             </div>
@@ -149,7 +149,7 @@
                 <div id="free-trial-classes">
                     <p id = "trials-question">What free trial do you want to try?</p>
                 <div>
-                <input type="radio" id="brazillian-jiu-jitsu-trial" name="chosen-free-trial" value="Brazillian-jiu-jitsu">
+                <input type="radio" id="brazillian-jiu-jitsu-trial" name="chosen-free-trial" value="Brazillian-jiu-jitsu" required>
                 <label for="brazillian-jiu-jitsu-trial">Brazillian-jiu-jitsu</label>
             </div>
             <div>
