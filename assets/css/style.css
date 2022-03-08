@@ -574,6 +574,7 @@ grid-column-start: 5;
     color: var(--text-color);
     font-size: 4rem;
     width: 100%;
+    border-radius: 1rem;
 }
 
 /* Free Trial form */
@@ -637,6 +638,7 @@ font-size: 1.7rem;
     font-size: 4rem;
     width: 100%;
     height: 9rem;
+    border-radius: 1rem;
 }
     /* Animations */
 @keyframes shake {
