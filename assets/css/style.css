@@ -649,14 +649,23 @@ font-size: 1.7rem;
     "thank-you thank-you thank-you"
     "processing-paragraph processing-paragraph processing-paragraph"
     "contact-paragraph contact-paragraph contact-paragraph"
-    "redirect-paragraph redirect-paragraph redirect-paragraph";
+    "redirect-paragraph redirect-paragraph redirect-paragraph"
+    ".... gears ....";
 }
 
 #thank-you{
     grid-area: thank-you;
     justify-self: center;
+    font-size: 25rem;
+    padding: 5rem 0 1rem 0;
+    color: var(--complimentary-color-light);
+    font-family: var(--accent-font-light);
+    letter-spacing: 1.4rem;
+    text-shadow: 2.5rem 1rem 3rem var(--secondary-color-light);
 }
 .confirmation-paragraph{
+    margin: 2rem 1rem;
+    font-size: 2.5rem;
     justify-self: center;
     }
 #processing-paragraph{
@@ -665,9 +674,24 @@ font-size: 1.7rem;
 #contact-paragraph{
     grid-area: contact-paragraph;
 }
+#contact-paragraph span{
+    color: var(--secondary-color);
+}
 #redirect-paragraph{
     grid-area: redirect-paragraph;
 }
+#home-redirect-link{
+    font-size: 2.5rem;
+    color: var(--complimentary-color-light);
+}
+#loading-ball{
+    border-radius: 50%;
+    grid-area: gears;
+    justify-self: center;
+    margin-top: 5rem;
+    font-size: 5rem;
+}
+
     /* Animations */
 @keyframes shake {
     0% {
