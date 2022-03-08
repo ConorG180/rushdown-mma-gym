@@ -640,6 +640,34 @@ font-size: 1.7rem;
     height: 9rem;
     border-radius: 1rem;
 }
+/* Confirmation page */
+#confirmation-container{
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "thank-you thank-you thank-you"
+    "processing-paragraph processing-paragraph processing-paragraph"
+    "contact-paragraph contact-paragraph contact-paragraph"
+    "redirect-paragraph redirect-paragraph redirect-paragraph";
+}
+
+#thank-you{
+    grid-area: thank-you;
+    justify-self: center;
+}
+.confirmation-paragraph{
+    justify-self: center;
+    }
+#processing-paragraph{
+    grid-area: processing-paragraph;
+}
+#contact-paragraph{
+    grid-area: contact-paragraph;
+}
+#redirect-paragraph{
+    grid-area: redirect-paragraph;
+}
     /* Animations */
 @keyframes shake {
     0% {
