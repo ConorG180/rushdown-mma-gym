@@ -644,7 +644,7 @@ font-size: 1.7rem;
 #confirmation-container{
     grid-column: 2/5;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(38rem, 1fr));
     grid-template-areas: 
     "thank-you thank-you thank-you"
     "processing-paragraph processing-paragraph processing-paragraph"
@@ -681,7 +681,7 @@ font-size: 1.7rem;
     grid-area: redirect-paragraph;
 }
 #home-redirect-link{
-    font-size: 2.5rem;
+    font-size: inherit;
     color: var(--complimentary-color-light);
 }
 #loading-ball{
@@ -691,7 +691,20 @@ font-size: 1.7rem;
     margin-top: 5rem;
     font-size: 5rem;
 }
-
+#left-cog{
+transform: translateX(1.5rem);
+color: var(--secondary-color); 
+animation: 1000ms linear infinite backwards left-cog-rotation
+}
+#middle-cog{
+    color: var(--complimentary-color-light); 
+animation: 1000ms linear infinite backwards middle-cog-rotation
+}
+#right-cog{
+ transform: translateX(-1.5rem);
+ color: var(--secondary-color); 
+animation: 1000ms linear infinite backwards right-cog-rotation
+}
     /* Animations */
 @keyframes shake {
     0% {
@@ -716,6 +729,30 @@ font-size: 1.7rem;
     transform: rotate(-15deg) translateX(1.5rem);
     }
 } 
+@keyframes left-cog-rotation{
+0%{
+    transform:  translateX(1.5rem) rotateZ(30deg);
+}
+100%{
+    transform: translateX(1.5rem) rotateZ(390deg);
+}
+}
+@keyframes middle-cog-rotation{
+    0%{
+        
+    }
+    100%{
+        transform:rotateZ(-360deg);
+    }
+}
+@keyframes right-cog-rotation{
+    0%{
+        transform:  translateX(-1.5rem) rotateZ(30deg);
+    }
+    100%{
+        transform: translateX(-1.5rem) rotateZ(390deg);
+    }
+    }
 /* Hover effects */
 
 /* For navbar and image color effect on hover */
