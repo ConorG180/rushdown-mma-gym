@@ -258,14 +258,6 @@ footer {
 
     /* Gallery page */
 
-/* #gallery-container{
-    margin-top: 5rem;
-    background-color: var(--secondary-color-dark);
-    grid-column: 2/5;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-} */
-
 #gallery-header-container{
     grid-column: 2/5;
     display: grid;
@@ -340,13 +332,16 @@ footer {
     background-color: rgba(112, 0, 0, 0.4);
     font-family: var(--primary-font);
     text-align: center;
-    font-size: 100%;
+    font-size: 1.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
     transform: scale(0);
     transform-origin: center;
     transition: 500ms;
+}
+.image-caption span{
+    padding: 0 0 1rem 0;
 }
 
 
@@ -766,7 +761,7 @@ header a:after, #gallery a:after {
     height: 0.4rem;
     transition: width 400ms, background-color 1200ms;
 }
-header a:hover:after, #gallery a:hover:after {
+ header a:hover:after, #gallery a:hover:after{ /*change #gallery a:hover:after to #gallery figure:hover a:after to add color effect when hover on caption*/
     width: 100%;
     background-color: var(--complimentary-color-light);
 }
