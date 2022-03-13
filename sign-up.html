@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "description" content = "Join the crew! Rushdown MMA is Dublin's hottest MMA gym. Unsure? We offer a free trial class for those new to the sport">
-    <meta name = "keywords" content = "rushdown mma, rushdown sign up, rushdown membership, mma dublin sign-up, rushdown classes, rushdown free trial, mma gym dublin">
+    <meta name="description"
+        content="Join the crew! Rushdown MMA is Dublin's hottest MMA gym. Unsure? We offer a free trial class for those new to the sport">
+    <meta name="keywords"
+        content="rushdown mma, rushdown sign up, rushdown membership, mma dublin sign-up, rushdown classes, rushdown free trial, mma gym dublin">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>RushDown MMA Sign Up</title>
 </head>
+
 <body>
-    <!-- Navbar and header -->
+    <!-- Header -->
     <header>
         <ul>
             <li>
@@ -19,171 +22,186 @@
                 </a>
             </li>
             <li>
-                <a href = sign-up.html>
+                <a href=sign-up.html>
                     Sign up
                 </a>
             </li>
             <li>
-                <a href = "gallery.html">
+                <a href="gallery.html">
                     Gallery
                 </a>
             </li>
             <li>
-                <a href = "#contact-us-container">
+                <a href="#contact-us-container">
                     Contact Us
                 </a>
             </li>
         </ul>
     </header>
+    <!-- Sign up form container. Holds both membership and free-trial forms, and their respective images -->
     <section id="sign-up-form">
-        <img id="membership-form-image"src="assets/images/rushdown-image-7.jpg"alt="An instructor coaching a member in boxing technique with pads">
+        <img id="membership-form-image" src="assets/images/rushdown-image-7.jpg"
+            alt="An instructor coaching a member in boxing technique with pads">
+            <!-- Membership form -->
         <div id="membership-form-container">
             <h2>Join the team!</h2>
-            <form id = "membership-form" action = “confirmation.html”>
-                <div class = "form-element-container" id = "first-name-container">
-                    <label for = "first-name">
+            <form id="membership-form" action=“confirmation.html”>
+                <div class="form-element-container" id="first-name-container">
+                    <label for="first-name">
                         First Name
                     </label>
                     <input type="text" id="first-name" name="first-name" required>
                 </div>
-                    <div class="form-element-container" id="last-name-container">
-                        <label for = "last-name">
-                            Last Name
-                        </label>
-                    <input type="text" id="last-name" name="last-name" required>         
+                <div class="form-element-container" id="last-name-container">
+                    <label for="last-name">
+                        Last Name
+                    </label>
+                    <input type="text" id="last-name" name="last-name" required>
                 </div>
                 <div class="form-element-container" id="email-container">
-                    <label for = "email">
+                    <label for="email">
                         Email
                     </label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-element-container" id="phone-number-container">
-                    <label for = "phone-number">
+                    <label for="phone-number">
                         Phone Number
                     </label>
                     <input type="number" id="phone-number" name="phone-number" required>
                 </div>
                 <div class="form-element-container" id="gender-container">
-                    <label for = "gender">
+                    <label for="gender">
                         Gender
-                      </label>
+                    </label>
                     <select name="gender" id="gender" required>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="undisclosed">Prefer not to say</option>
-                      </select>
-                    </div>
-                      <div class="form-element-container" id="dob-container">
-                        <label>
-                            Date of Birth
-                          </label>
-                      <input type="date" id="dob" name="dob" min="1900-01-01" required>
-                    </div>
-                    <p id = "classes-question">What martial arts do you have an interest in pursuing?</p>
-                    <div class="form-element-container" id = "classes-container">
-                        <div class = "checkbox-container">
+                    </select>
+                </div>
+                <div class="form-element-container" id="dob-container">
+                    <label>
+                        Date of Birth
+                    </label>
+                    <input type="date" id="dob" name="dob" min="1900-01-01" required>
+                </div>
+                <p id="classes-question">What martial arts do you have an interest in pursuing?</p>
+                <div class="form-element-container" id="classes-container">
+                    <div class="checkbox-container">
                         <input type="checkbox" id="brazillian-jiu-jitsu" name="interest" value="true">
                         <label for="brazillian-jiu-jitsu">Brazillian-jiu-jitsu</label>
-                          </div>
-                          <div class = "checkbox-container">
+                    </div>
+                    <div class="checkbox-container">
                         <input type="checkbox" id="wrestling" name="interest" value="true">
                         <label for="wrestling">Wrestling</label>
                     </div>
-                    <div class = "checkbox-container">
+                    <div class="checkbox-container">
                         <input type="checkbox" id="muay-thai" name="interest" value="true">
                         <label for="muay-thai">Muay-thai</label>
                     </div>
-                    <div class = "checkbox-container">
+                    <div class="checkbox-container">
                         <input type="checkbox" id="mma" name="interest" value="true">
                         <label for="mma">MMA</label>
                     </div>
-                    <div class = "checkbox-container">
+                    <div class="checkbox-container">
                         <input type="checkbox" id="yoga" name="interest" value="true">
                         <label for="yoga">Yoga</label>
                     </div>
-                    <div class = "checkbox-container">
+                    <div class="checkbox-container">
                         <input type="checkbox" id="boxing" name="interest" value="true">
                         <label for="boxing">Boxing</label>
                     </div>
-                     </div>
-                     <div class="form-element-container" id = "medical-history-container">
-                        <label for = "medical">
-                            Do you suffer from any serious medical conditions or have you had any surgical operations we should know about?
-                        </label>
-        <textarea id="medical-history" name="medical-history" rows="8" cols="50" required></textarea>
-    </div>
-        <div class="form-element-container membership-options">
-            <div class = "subscription-container" id = "monthly-container">
-                <h3>Monthly</h3>
-                <div class = "radio-container">
-                <input type="radio" id="monthly-membership" name="chosen-membership" value="Monthly" required>
-                <label for="monthly-membership">1 month<br>€100</label>
-            </div>
-            </div>
-            <div class = "subscription-container" id = "quarterly-container">
-                <h3>Quarterly</h3>
-                <div class = "radio-container">
-                <input type="radio" id="quarterly-membership" name="chosen-membership" value="Quarterly">
-                <label for="quarterly-membership">3 months<br>€100</label>
-            </div>
-            </div>
-            <div class = "subscription-container" id = "biannual-container">
-                <h3>Biannual</h3>
-                <div class = "radio-container">
-                <input type="radio" id="biannual-membership" name="chosen-membership" value="Biannual">
-                <label for="biannual-membership">6 months<br>€170</label>
-            </div>
-            </div>
-        </div>
-        <button type = "submit" id = "membership-submit-button">Join</button>
-                
+                </div>
+                <div class="form-element-container" id="medical-history-container">
+                    <label for="medical">
+                        Do you suffer from any serious medical conditions or have you had any surgical operations we
+                        should know about?
+                    </label>
+                    <textarea id="medical-history" name="medical-history" rows="8" cols="50" required></textarea>
+                </div>
+                <div class="form-element-container membership-options">
+                    <div class="subscription-container" id="monthly-container">
+                        <h3>Monthly</h3>
+                        <div class="radio-container">
+                            <input type="radio" id="monthly-membership" name="chosen-membership" value="Monthly"
+                                required>
+                            <label for="monthly-membership">1 month<br>€100</label>
+                        </div>
+                    </div>
+                    <div class="subscription-container" id="quarterly-container">
+                        <h3>Quarterly</h3>
+                        <div class="radio-container">
+                            <input type="radio" id="quarterly-membership" name="chosen-membership" value="Quarterly">
+                            <label for="quarterly-membership">3 months<br>€100</label>
+                        </div>
+                    </div>
+                    <div class="subscription-container" id="biannual-container">
+                        <h3>Biannual</h3>
+                        <div class="radio-container">
+                            <input type="radio" id="biannual-membership" name="chosen-membership" value="Biannual">
+                            <label for="biannual-membership">6 months<br>€170</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" id="membership-submit-button">Join</button>
             </form>
         </div>
-        <img id = "free-trial-image" src = "assets/images/rushdown-image-4.jpg" alt="A younger member of the club in a fighting pose">
-        <div id = "free-trial-container">
+        <img id="free-trial-image" src="assets/images/rushdown-image-4.jpg"
+            alt="A younger member of the club in a fighting pose">
+            <!-- Free trial form -->
+        <div id="free-trial-container">
             <h2>Free trial?</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut iusto blanditiis dolore dignissimos ipsa autem reiciendis non totam eum pariatur, voluptas fugit, molestiae, incidunt distinctio recusandae natus ducimus ab minus! Illum, maiores! Totam ut reiciendis ullam ipsam veritatis ratione sequi dolorum eveniet, dolore id natus dolor, ex asperiores odit! Tempora iste inventore at quas esse modi veritatis sunt reiciendis odio.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque corporis nisi veniam impedit est autem! Dolor placeat minus quaerat, nobis cumque corporis porro et repellendus, consectetur iure fugit reiciendis debitis excepturi vero at quo. Optio assumenda natus ad, cupiditate consequatur sequi sint quibusdam quae, exercitationem at animi enim! Reprehenderit voluptates inventore in vitae ad dignissimos aut error enim dolor rerum.</p>
-            <form action = “confirmation.html”>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut iusto blanditiis dolore dignissimos ipsa
+                autem reiciendis non totam eum pariatur, voluptas fugit, molestiae, incidunt distinctio recusandae natus
+                ducimus ab minus! Illum, maiores! Totam ut reiciendis ullam ipsam veritatis ratione sequi dolorum
+                eveniet, dolore id natus dolor, ex asperiores odit! Tempora iste inventore at quas esse modi veritatis
+                sunt reiciendis odio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque corporis nisi veniam impedit est autem!
+                Dolor placeat minus quaerat, nobis cumque corporis porro et repellendus, consectetur iure fugit
+                reiciendis debitis excepturi vero at quo. Optio assumenda natus ad, cupiditate consequatur sequi sint
+                quibusdam quae, exercitationem at animi enim! Reprehenderit voluptates inventore in vitae ad dignissimos
+                aut error enim dolor rerum.</p>
+            <form action=“confirmation.html”>
                 <div id="free-trial-classes">
-                    <p id = "trials-question">What free trial do you want to try?</p>
-                <div>
-                <input type="radio" id="brazillian-jiu-jitsu-trial" name="chosen-free-trial" value="Brazillian-jiu-jitsu" required>
-                <label for="brazillian-jiu-jitsu-trial">Brazillian-jiu-jitsu</label>
-            </div>
-            <div>
-                <input type="radio" id="wrestling-trial" name="chosen-free-trial" value="Wrestling">
-                <label for="wrestling-trial">Wrestling</label>
-            </div>
-            <div>
-                <input type="radio" id="muay-thai-trial" name="chosen-free-trial" value="Muay-thai">
-                <label for="muay-thai-trial">Muay-thai</label>
-            </div>
-            <div>
-                <input type="radio" id="mma-trial" name="chosen-free-trial" value="MMA">
-                <label for="mma-trial">MMA</label>
-            </div>
-                <div>
-                <input type="radio" id="yoga-trial" name="chosen-free-trial" value="Yoga">
-                <label for="yoga-trial">Yoga</label>
-            </div>
-            <div>
-                <input type="radio" id="boxing-trial" name="chosen-free-trial" value="Boxing">
-                <label for="boxing-trial">Boxing</label>
-            </div>
-        </div>
-                <button type = "submit" id = "free-trial-submit-button">Book free trial</button>
-            
+                    <p id="trials-question">What free trial do you want to try?</p>
+                    <div>
+                        <input type="radio" id="brazillian-jiu-jitsu-trial" name="chosen-free-trial"
+                            value="Brazillian-jiu-jitsu" required>
+                        <label for="brazillian-jiu-jitsu-trial">Brazillian-jiu-jitsu</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="wrestling-trial" name="chosen-free-trial" value="Wrestling">
+                        <label for="wrestling-trial">Wrestling</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="muay-thai-trial" name="chosen-free-trial" value="Muay-thai">
+                        <label for="muay-thai-trial">Muay-thai</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="mma-trial" name="chosen-free-trial" value="MMA">
+                        <label for="mma-trial">MMA</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="yoga-trial" name="chosen-free-trial" value="Yoga">
+                        <label for="yoga-trial">Yoga</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="boxing-trial" name="chosen-free-trial" value="Boxing">
+                        <label for="boxing-trial">Boxing</label>
+                    </div>
+                </div>
+                <button type="submit" id="free-trial-submit-button">Book free trial</button>
             </form>
         </div>
     </section>
-    <footer>   
-        <div id = "contact-us-container">
+
+    <footer>
+        <div id="contact-us-container">
             <h2>
                 Contact us
             </h2>
-            <ul id = contact-information-container>
+            <ul id=contact-information-container>
                 <li>
                     <i class="fa fa-solid fa-phone contact-us-icon"></i> 044-92-29072
                 </li>
@@ -194,39 +212,41 @@
                     <i class="fa-solid fa-location-dot contact-us-icon"></i> 3, Old Cabra Road, Dublin 7, Ireland
                 </li>
             </ul>
-            <ul id = "social-media-icons-container">
+            <ul id="social-media-icons-container">
                 <li>
-                    <a href = "https://www.instagram.com/?hl=en" target = _blank>
+                    <a href="https://www.instagram.com/?hl=en" target=_blank>
                         <i class="fa-brands fa-instagram-square"></i>
                     </a>
                 </li>
                 <li>
-                    <a href = "https://www.facebook.com/" target = _blank>
+                    <a href="https://www.facebook.com/" target=_blank>
                         <i class="fa-brands fa-facebook-square"></i>
                     </a>
                 </li>
                 <li>
-                    <a href = "https://www.youtube.com/" target = _blank>
+                    <a href="https://www.youtube.com/" target=_blank>
                         <i class="fa-brands fa-youtube-square"></i>
                     </a>
                 </li>
                 <li>
-                    <a href = "https://twitter.com/?lang=en" target = _blank>
+                    <a href="https://twitter.com/?lang=en" target=_blank>
                         <i class="fa-brands fa-twitter-square"></i>
                     </a>
                 </li>
-            <li>
-                <a href = "https://www.snapchat.com/" target = _blank>
-                    <i class="fa-brands fa-snapchat-square"></i>
-                </a>
-            </li>
+                <li>
+                    <a href="https://www.snapchat.com/" target=_blank>
+                        <i class="fa-brands fa-snapchat-square"></i>
+                    </a>
+                </li>
             </ul>
+        </div>
+        <iframe id="google-maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1415.8737792737195!2d-6.289164484023184!3d53.35746148164159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670dcc585196a9%3A0x51c8e0a2772d6765!2s3%20Seanbh%C3%B3thar%20Na%20Cabra%C3%AD%2C%20Cabra%20East%2C%20Dublin%207%2C%20D07%20T6C6!5e0!3m2!1sen!2sie!4v1644776015881!5m2!1sen!2sie"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </footer>
 
-            </div>
-    <iframe id="google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1415.8737792737195!2d-6.289164484023184!3d53.35746148164159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670dcc585196a9%3A0x51c8e0a2772d6765!2s3%20Seanbh%C3%B3thar%20Na%20Cabra%C3%AD%2C%20Cabra%20East%2C%20Dublin%207%2C%20D07%20T6C6!5e0!3m2!1sen!2sie!4v1644776015881!5m2!1sen!2sie"width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" >
-    </iframe>
-        <!-- Font Awesome Script -->  
-    <script src="https://kit.fontawesome.com/809fd5dfb5.js" crossorigin="anonymous"></script>
-</footer>
+        <!-- Font Awesome Script -->
+        <script src="https://kit.fontawesome.com/809fd5dfb5.js" crossorigin="anonymous"></script>
 </body>
 </html>
