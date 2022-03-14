@@ -425,11 +425,10 @@ footer {
     width: 100%;
     max-width: 100%;
     object-fit: cover;
-    border-left: 0.3rem solid var(--secondary-color-dark);
-    border-right: 0.3rem solid var(--secondary-color-dark);
-    border-bottom: 0.3rem solid var(--secondary-color-dark);
+    border: 0.3rem solid var(--secondary-color-dark);
     border-radius: 2rem;
     object-position: 50% 25%;
+    margin-top: 10rem;
 }
 
 #membership-form-image {
