@@ -776,32 +776,32 @@ footer {
 
 /* Animations */
 /* Animation for sign-up button on gym cards in index.html */
-@keyframes shake {
+@keyframes zoom-in-out {
     0% {
-        transform: rotate(-15deg) translateX(1.5rem);
+        transform: scale(1.25);
     }
 
     20% {
         color: yellow;
-        transform: rotate(15deg) translateX(-1.5rem);
+        transform: scale(1);
     }
 
     40% {
-        transform: rotate(-15deg) translateX(1.5rem);
+        transform: scale(1.4);
     }
 
     60% {
         color: yellow;
-        transform: rotate(50deg) translateX(-1.5rem);
+        transform: scale(1);
     }
 
     80% {
-        transform: rotate(-65deg) translateX(1.5rem);
+        transform: scale(1.6);
     }
 
     100% {
         color: yellow;
-        transform: rotate(-15deg) translateX(1.5rem);
+        transform: scale(1.6);
     }
 }
 /* Animation for left cog in confirmation.html */
@@ -869,7 +869,7 @@ header a:hover:after, #gallery a:hover:after {/*change #gallery a:hover:after to
 
 /* gym card sign up button hover/shake effect */
 .gym-card button:hover {
-    animation-name: shake;
+    animation-name: zoom-in-out;
     animation-duration: 1500ms;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
