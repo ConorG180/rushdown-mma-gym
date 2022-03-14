@@ -273,11 +273,12 @@ footer {
     font-size: 5rem;
     width: 100%;
 }
-
+#social-media-icons-container a{
+    margin-right: 3rem;
+}
 .fa-brands {
     transition: 300ms;
     color: var(--secondary-color);
-    padding-right: 3rem;
 }
 
 /* gallery.html */
