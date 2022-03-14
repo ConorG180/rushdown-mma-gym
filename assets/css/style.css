@@ -507,6 +507,7 @@ footer {
     padding-top: 3.5rem;
     justify-self: center;
     font-size: 2rem;
+    margin: 0 1.5rem;
 }
 
 #classes-container {
@@ -632,7 +633,6 @@ footer {
     grid-area: free-trial-form;
     display: grid;
     grid-template-columns: repeat(2, minmax(25rem, 1fr));
-    grid-template-rows: 20% 20% 20% 20% 20%;
     border-left: 0.3rem solid var(--secondary-color-dark);
     border-right: 0.3rem solid var(--secondary-color-dark);
     border-bottom: 0.3rem solid var(--secondary-color-dark);
