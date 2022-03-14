@@ -19,6 +19,7 @@
 /* Default styles */
 html {
     font-size: 62.5%; /* used to set each rem unit to 10 pixels, easier to work with font sizes */
+    scroll-behavior: smooth;
 }
 * {
     padding: 0;
