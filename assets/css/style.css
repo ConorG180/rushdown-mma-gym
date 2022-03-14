@@ -1,31 +1,31 @@
+/* Import fonts from google */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&family=Poppins&display=swap');
 
+/* Root variables */
 :root {
-        /* color scheme */
---primary-color: #161214;
---secondary-color: #B30606;
---secondary-color-light: #f00404;
- --secondary-color-dark: #700000; /* #5B0000 */
---tertiary-color: #8A286F;
---complimentary-color-light: #fbff0fef;
---text-color: #e6f0f5;
-
-/* fonts */
---accent-font: "Bebas Neue", ariel, "sans-serif";
---accent-font-light:'Oswald', ariel, "sans-serif";
---primary-font: poppins, helvetica, "sans-serif"
+    /* Color scheme */
+    --primary-color: #161214;
+    --secondary-color: #B30606;
+    --secondary-color-light: #f00404;
+    --secondary-color-dark: #700000;
+    --complimentary-color-light: #fbff0fef;
+    --text-color: #e6f0f5;
+    /* Fonts */
+    --accent-font: "Bebas Neue", ariel, "sans-serif";
+    --accent-font-light: 'Oswald', ariel, "sans-serif";
+    --primary-font: poppins, helvetica, "sans-serif"
 }
 
-html{
- font-size: 62.5%; /*used to set each rem unit to 10 pixels, easier to work with font sizes */
+/* Default styles */
+html {
+    font-size: 62.5%; /* used to set each rem unit to 10 pixels, easier to work with font sizes */
 }
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-h2,h3{
+h2, h3 {
     color: var(--secondary-color-light);
     font-family: var(--accent-font-light);
     text-align: center;
@@ -38,39 +38,45 @@ h1 {
     color: var(--secondary-color-light);
     text-shadow: 3px 3px 4px white;
 }
-h2{
+
+h2 {
     font-size: 4.5rem;
     letter-spacing: 0.25rem;
 }
 
-h3{
+h3 {
     margin-top: 0.5rem;
     font-size: 2.5rem;
     letter-spacing: 0.5rem;
 }
-p{
+
+p {
     font-size: 1.70rem;
 }
-ul{
+
+ul {
     color: var(--text-color);
     font-family: var(--primary-font);
 }
-a{
+
+a {
     color: var(--text-color);
     font-size: 4rem;
     position: relative;
     text-decoration: none;
 }
 
+/* index.html */
+/* Body used in each page. Grid template areas holds header and footer on each page, and hero image, gym cards and about-us section in index.html */
 body {
     display: grid;
     grid-template-columns: 40rem repeat(3, 1fr) 40rem;
-    grid-template-areas: 
-    "header header header header header"
-    "hero-img hero-img hero-img hero-img hero-img"
-    "... gym-class-cards gym-class-cards gym-class-cards ..."
-    "... about-us about-us about-us ..."
-    "footer footer footer footer footer";
+    grid-template-areas:
+        "header header header header header"
+        "hero-img hero-img hero-img hero-img hero-img"
+        "... gym-class-cards gym-class-cards gym-class-cards ..."
+        "... about-us about-us about-us ..."
+        "footer footer footer footer footer";
     font-size: 1.7rem;
     font-weight: 400;
     line-height: 1.4;
@@ -79,6 +85,7 @@ body {
     font-family: var(--primary-font);
 }
 
+/* Header */
 header {
     grid-area: header;
     size: 100%;
@@ -88,6 +95,7 @@ header {
     border-bottom: 0.3rem solid var(--secondary-color-dark);
     color: var(--text-color);
 }
+
 header ul {
     grid-column: 1/4;
     display: flex;
@@ -98,25 +106,27 @@ header ul {
     font-size: 3rem;
 }
 
-#hero-img-container{
+/* Hero image */
+#hero-img-container {
     grid-area: hero-img;
 }
 
-#hero-img-container div{
+#hero-img-container div {
     display: flex;
     justify-content: center;
 }
 
-#hero-img-container img{
-width: 100%;
-max-width: 100%;
-aspect-ratio: 3/1;
-object-fit: cover;
-border-top: 0.3rem solid var(--secondary-color-dark);
-border-bottom: 0.3rem solid var(--secondary-color-dark);
+#hero-img-container img {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 3/1; /*  Used to control size and aspect ratio of images */
+    object-fit: cover;
+    border-top: 0.3rem solid var(--secondary-color-dark);
+    border-bottom: 0.3rem solid var(--secondary-color-dark);
 }
 
-#gym-class-cards{
+/* Gym cards */
+#gym-class-cards {
     padding: 2rem 0 4rem 0;
     grid-area: gym-class-cards;
     display: grid;
@@ -127,12 +137,14 @@ border-bottom: 0.3rem solid var(--secondary-color-dark);
 #gym-class-cards-header {
     display: flex;
     justify-content: center;
-grid-column: 1/4;
-padding: 4rem 0 0 0;
+    grid-column: 1/4;
+    padding: 4rem 0 0 0;
 }
-#gym-class-cards-header span{
+
+#gym-class-cards-header span {
     color: var(--complimentary-color-light)
 }
+
 #gym-class-cards img {
     max-width: 100%;
     max-height: 100%;
@@ -143,25 +155,28 @@ padding: 4rem 0 0 0;
     border-radius: 1rem 1rem 0 0;
 }
 
-.gym-card{
+.gym-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 0.3rem solid var(--secondary-color-dark);
     border-radius: 1rem;
 }
-.gym-card p{
+
+.gym-card p {
     padding: 2rem;
 }
-.gym-card button{
+
+.gym-card button {
     background-color: var(--primary-color);
     color: var(--text-color);
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 0 1rem 0;
     border: none;
     font-size: 2rem;
     background-color: transparent;
 }
 
+/* About us and virtual video tour section */
 #about-us {
     grid-area: about-us;
     display: grid;
@@ -171,33 +186,37 @@ padding: 4rem 0 0 0;
     grid-gap: 4rem;
 }
 
-#about-us h2{
+#about-us h2 {
     grid-column: 1/3;
     text-align: center;
     padding: 5rem 0 0 1rem;
 }
-#about-us h3{
+
+#about-us h3 {
     padding-bottom: 2rem;
 }
 
-#about-us p{
-    padding: 2rem;
+#about-us p {
+    padding: 0 2rem 2rem 2rem;
 }
-#about-us-block{
+
+#about-us-block {
     grid-column: 1/2;
 }
 
 #about-us-block ul {
-    /* list-style-type: none; */
-    padding: 2rem 2rem 3.5rem 2rem;
+    padding: 0 2rem 0 3.5rem;
 }
-#about-us-block ul li{
+
+#about-us-block ul li {
     padding-bottom: 2rem;
     font-size: inherit;
 }
-#virtual-tour-block{
+
+#virtual-tour-block {
     grid-column: 2/3;
 }
+
 #virtual-tour-block video {
     max-width: 100%;
     max-height: 130rem;
@@ -215,62 +234,66 @@ footer {
     grid-gap: 4rem;
     margin-top: 5rem;
 }
-    
-    #contact-us-container{
-        grid-column: 2/3;
-        display: flex;
+
+#contact-us-container {
+    grid-column: 2/3;
+    display: flex;
     flex-direction: column;
     align-items: space-between;
-    }
+}
 
-    #google-maps {
-        grid-column: 3/4;
-        max-width: 100%;
-        height: 100%;
-        outline: 0.3rem solid var(--secondary-color-dark);
-    }
+#google-maps {
+    grid-column: 3/4;
+    max-width: 100%;
+    height: 100%;
+    outline: 0.3rem solid var(--secondary-color-dark);
+}
 
-    #contact-us-container h2{
-        margin-bottom: 2.5rem;
-    }
-    #contact-information-container li {
+#contact-us-container h2 {
+    margin-bottom: 2.5rem;
+}
+
+#contact-information-container li {
     list-style-type: none;
 }
-#contact-information-container li{
+
+#contact-information-container li {
     padding: 0.5rem;
 }
-.contact-us-icon{
+
+.contact-us-icon {
     margin-right: 1rem;
     color: var(--secondary-color);
 }
 
-    #social-media-icons-container{
-        display: flex;
-        list-style-type: none;
-        padding-top: 3rem;
-        font-size: 5rem;
-        width: 100%;
-    }
-    .fa-brands{
-        transition: 300ms;
-        color: var(--secondary-color);
-        padding-right: 3rem;
-    }
+#social-media-icons-container {
+    display: flex;
+    list-style-type: none;
+    padding-top: 3rem;
+    font-size: 5rem;
+    width: 100%;
+}
 
-    /* Gallery page */
+.fa-brands {
+    transition: 300ms;
+    color: var(--secondary-color);
+    padding-right: 3rem;
+}
 
-#gallery-header-container{
+/* gallery.html */
+/* Gallery header and click/hover informational messages */
+#gallery-header-container {
     grid-column: 2/5;
     display: grid;
     grid-template-columns: max-content 3fr max-content;
     grid-template-rows: 10rem 1fr;
-    grid-template-areas: 
-    "header header header"
-    "click-message ... hover-message";
+    grid-template-areas:
+        "header header header"
+        "click-message ... hover-message";
     margin-top: 5rem;
 }
 
-#gallery-header{
+#gallery-header {
     color: var(--secondary-color-light);
     font-family: var(--accent-font-light);
     grid-area: header;
@@ -279,7 +302,8 @@ footer {
     font-size: 4.5rem;
     text-align: center;
 }
-#gallery-click-message,#gallery-hover-message{
+
+#gallery-click-message, #gallery-hover-message {
     color: var(--complimentary-color-light);
     font-family: var(--accent-font-light);
     text-shadow: none;
@@ -289,25 +313,26 @@ footer {
     align-self: end;
     padding: 1rem;
 }
-#gallery-click-message{
+
+#gallery-click-message {
     grid-area: click-message;
 }
-#gallery-hover-message{
+
+#gallery-hover-message {
     grid-area: hover-message;
     justify-self: end;
 }
-#gallery{
+
+/* Gallery, images and captions*/
+#gallery {
     grid-column: 2/5;
-    /* grid-gap: 1rem; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-auto-rows: 25rem;
     grid-auto-flow: dense;
-    /* background-color: transparent */
-    /* border: 0.3rem solid var(--secondary-color-dark); */
 }
 
-.image-holder{
+.image-holder {
     background-color: var(--secondary-color-dark);
     padding: 0.4rem 0.5rem;
     overflow: hidden;
@@ -315,18 +340,17 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 1fr;
 }
-.image-holder a{
-    /* background-color: var(--secondary-color-dark);
-    padding: 0.4rem 0.5rem; */
-    overflow: hidden; 
+
+.image-holder a {
+    overflow: hidden;
     height: 100%;
     width: 100%;
     grid-column: 1/2;
     grid-row: 1/3;
 }
-.image-caption{
+
+.image-caption {
     background-color: transparent;
-    /* padding: 3rem; */
     z-index: 1;
     grid-column: 1/2;
     grid-row: 2/3;
@@ -341,12 +365,12 @@ footer {
     transform-origin: center;
     transition: 500ms;
 }
-.image-caption span{
+
+.image-caption span {
     padding: 0 0 1rem 0;
 }
 
-
-.image-holder img{
+.image-holder img {
     max-width: 100%;
     width: 100%;
     height: 100%;
@@ -354,150 +378,166 @@ footer {
     object-fit: cover;
     object-position: center;
     transition: 500ms;
-    /* border: 0.3rem solid var(--secondary-color-dark); */
 }
 
-
-/*controlling image row and column spans using utility classes*/
-
-.big{
+/* Classes below are used to control the amount of rows and columns each image spans, allowing for portrait/landscape or big photos */
+.big {
     grid-column: span 2;
     grid-row: span 2;
 }
-.landscape{
+
+.landscape {
     grid-column: span 2;
     grid-row: span 1;
 }
-.big-landscape{
+
+.big-landscape {
     grid-column: span 3;
     grid-row: span 2;
 }
-.portrait{
+
+.portrait {
     grid-column: span 1;
     grid-row: span 2;
 }
-.big-portrait{
+
+.big-portrait {
     grid-column: span 2;
     grid-row: span 3;
 }
 
-/* Sign up page */
-#sign-up-form{ /* contains membership form and free trial form */
+/* sign-up.html */
+/* Contains membership form and free trial form */
+#sign-up-form {
     grid-column: 1/6;
     display: grid;
     grid-template-columns: 20rem 2fr 5rem 1fr 20rem;
     grid-template-rows: 1fr;
     grid-template-areas:
-    ". membership-image . free-trial-image ." 
-    ". membership-form . free-trial-form .";
+        "... membership-image . free-trial-image ..."
+        "... membership-form . free-trial-form ...";
 }
-#membership-form-image,#free-trial-image{
+
+#membership-form-image, #free-trial-image {
     grid-area: membership-image;
     width: 100%;
     max-width: 100%;
     object-fit: cover;
     border-left: 0.3rem solid var(--secondary-color-dark);
-   border-right: 0.3rem solid var(--secondary-color-dark);
+    border-right: 0.3rem solid var(--secondary-color-dark);
     border-bottom: 0.3rem solid var(--secondary-color-dark);
     border-radius: 2rem;
     object-position: 50% 25%;
 }
-#membership-form-image{
+
+#membership-form-image {
     grid-area: membership-image;
     object-position: 50% 25%;
     aspect-ratio: 3/1;
 }
-#free-trial-image{
+
+#free-trial-image {
     grid-area: free-trial-image;
     object-position: 50% 20%;
     aspect-ratio: 3/2;
 }
-#sign-up-form input, #sign-up-form select, #sign-up-form textarea{
+
+#sign-up-form input, #sign-up-form select, #sign-up-form textarea {
     border-radius: 1rem;
 }
-#sign-up-form select:focus, #sign-up-form input:focus, #sign-up-form textarea:focus {
+
+#sign-up-form input:focus, #sign-up-form select:focus, #sign-up-form textarea:focus {
     outline: 2px solid var(--secondary-color-dark);
 }
+
 /* Membership form  */
-#membership-form-container{
-   grid-area: membership-form;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   border-left: 0.3rem solid var(--secondary-color-dark);
-   border-right: 0.3rem solid var(--secondary-color-dark);
-   border-bottom: 0.3rem solid var(--secondary-color-dark);
-   border-radius: 2rem;
+#membership-form-container {
+    grid-area: membership-form;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-left: 0.3rem solid var(--secondary-color-dark);
+    border-right: 0.3rem solid var(--secondary-color-dark);
+    border-bottom: 0.3rem solid var(--secondary-color-dark);
+    border-radius: 2rem;
 }
-.form-element-container{
+
+.form-element-container {
     padding: 1rem;
     width: auto;
 }
-.form-element-container input{
-width: 100%;
-height: 4rem;
-}
-.form-element-container label{
+
+.form-element-container input, .form-element-container select  {
     width: 100%;
-}
-.form-element-container select{
     height: 4rem;
+}
+
+.form-element-container label {
     width: 100%;
 }
-#membership-form-container h2{
+
+#membership-form-container h2 {
     grid-column: 1/3;
     padding-bottom: 3rem;
 }
-#membership-form{
+
+#membership-form {
     grid-column: 1/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(6, auto) 1fr;
-     /* to make membership options have more length grid-template-rows: repeat(6, auto) 30rem; */
 }
-#membership-form label{
-   display: block;
+
+#membership-form label {
+    display: block;
 }
-#first-name-container,#email-container,#gender-container{
+
+/* Below ids are aligned to the left of the membership form */
+#first-name-container, #email-container, #gender-container {
     grid-column: 1/2;
 }
-#last-name-container,#phone-number-container,#dob-container{
+/* Below ids are aligned to the right of the membership form */
+#last-name-container, #phone-number-container, #dob-container {
     grid-column: 2/3;
 }
-#classes-question{
+
+#classes-question {
     grid-column: 1/3;
     font-size: 2rem;
-    /* padding-left: 2.25rem; */
     padding-top: 3.5rem;
     justify-self: center;
     font-size: 2rem;
 }
-#classes-container{
+
+#classes-container {
     grid-column: 1/3;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);   /* //try use repeat autofill here (auto-fill, minmax(10rem, 1fr) )*/
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     padding: 2rem 0;
     justify-self: center;
-    /* max-width: 100%; */
 }
- .checkbox-container{
+
+.checkbox-container {
     display: grid;
     grid-template-columns: 5rem 12rem;
     align-items: center;
     justify-content: center;
     justify-self: center;
     padding: 1rem 0;
-} 
-.checkbox-container label{
+}
+
+.checkbox-container label {
     padding: 0 1rem;
     font-size: 1.7rem;
     text-align: start;
+    margin: 0 1rem;
 }
+
 .checkbox-container input {
-height: 4rem;
-width: 4rem;
-} 
-#medical-history-container{
+    margin: 0 1rem;
+}
+
+#medical-history-container {
     grid-column: 1/3;
     display: grid;
     grid-template-columns: 1fr;
@@ -505,23 +545,29 @@ width: 4rem;
     justify-self: center;
     width: 100%;
 }
-#medical-history{
-    width: 100%;
+
+#medical-history {
+     width: 99%; /* Done for margin purposes on medical history textarea */
     justify-self: center;
 }
-#medical-history-container label{
+
+#medical-history-container label {
     padding: 1rem 0;
     text-align: center;
 }
-.membership-options{
+
+/* Contains subscription containers */
+.membership-options {
     grid-column: 1/3;
     display: grid;
-     grid-template-columns: repeat(2, 1fr) repeat(3, minmax(12.5rem, 25rem)) repeat(2, 1fr); /* to indent subscription options */
+    /* Extra columns added to indent subscription options at large screen sizes */
+    grid-template-columns: repeat(2, 1fr) repeat(3, minmax(12.5rem, 25rem)) repeat(2, 1fr);
     grid-gap: 2.5rem;
     width: 100%;
     padding-top: 2rem;
 }
-.subscription-container{
+
+.subscription-container {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -529,7 +575,8 @@ width: 4rem;
     border: 2px solid var(--secondary-color-dark);
     width: 100%;
 }
-.subscription-container h3{
+
+.subscription-container h3 {
     padding: 1rem;
     margin: 0;
     background-color: var(--secondary-color-dark);
@@ -537,31 +584,37 @@ width: 4rem;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
 }
-.subscription-container input{
-    width: 2rem;
+
+.subscription-container input {
+    width: 2rem; /* Needed for cursor outline when option is selected */
     height: 2rem;
     margin: 1rem;
 }
-.subscription-container label{
-    width: 100%;
+
+.subscription-container label {
     text-align: center;
     font-size: 2rem;
 }
-.radio-container{
+
+.radio-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#monthly-container{
-grid-column-start: 3;
+
+#monthly-container {
+    grid-column-start: 3;
 }
-#quarterly-container{
-grid-column-start: 4;
+
+#quarterly-container {
+    grid-column-start: 4;
 }
-#biannual-container{
-grid-column-start: 5;
+
+#biannual-container {
+    grid-column-start: 5;
 }
-#membership-submit-button{
+
+#membership-submit-button {
     grid-column: 1/3;
     justify-self: center;
     margin: 2rem;
@@ -573,8 +626,8 @@ grid-column-start: 5;
     border-radius: 1rem;
 }
 
-/* Free Trial form */
-#free-trial-container{
+/* Free trial form */
+#free-trial-container {
     grid-area: free-trial-form;
     display: grid;
     grid-template-columns: repeat(2, minmax(25rem, 1fr));
@@ -584,35 +637,40 @@ grid-column-start: 5;
     border-bottom: 0.3rem solid var(--secondary-color-dark);
     border-radius: 2rem;
 }
-#free-trial-container h2{
+
+#free-trial-container h2 {
     grid-column: 1/3;
 }
-#free-trial-container p{
+
+#free-trial-container p {
     grid-column: 1/3;
     text-align: center;
     margin: 0 2rem;
 }
-#free-trial-container form{
+
+/* Contains free trial class inputs and #trials-question */
+#free-trial-container form {
     grid-column: 1/3;
     grid-row: 4/6;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
-    /* grid-template-rows: 2fr 1fr; */
 }
-#trials-question{
+
+#trials-question {
     grid-column: 1/3;
     font-size: 2rem;
     justify-self: center;
     font-size: 2rem;
 }
-#free-trial-classes{
-grid-column: 1/3;
-display: grid;
-grid-template-columns: 1fr 1fr;
-font-size: 1.7rem;
+
+#free-trial-classes {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.7rem;
 }
-#free-trial-classes div{
+
+#free-trial-classes div {
     justify-self: start;
     padding-right: 5rem;
     display: grid;
@@ -623,7 +681,7 @@ font-size: 1.7rem;
     padding: 1rem 0;
 }
 
-#free-trial-submit-button{
+#free-trial-submit-button {
     grid-column: 1/3;
     justify-self: center;
     align-self: end;
@@ -636,20 +694,22 @@ font-size: 1.7rem;
     height: 9rem;
     border-radius: 1rem;
 }
-/* Confirmation page */
-#confirmation-container{
+
+/* confirmation.html */
+/* Container for thank you message, paragraphs with information, and loading animation */
+#confirmation-container {
     grid-column: 2/5;
     display: grid;
     grid-template-columns: repeat(3, minmax(32rem, 1fr));
-    grid-template-areas: 
-    "thank-you thank-you thank-you"
-    "processing-paragraph processing-paragraph processing-paragraph"
-    "contact-paragraph contact-paragraph contact-paragraph"
-    "redirect-paragraph redirect-paragraph redirect-paragraph"
-    ".... gears ....";
+    grid-template-areas:
+        "thank-you thank-you thank-you"
+        "processing-paragraph processing-paragraph processing-paragraph"
+        "contact-paragraph contact-paragraph contact-paragraph"
+        "redirect-paragraph redirect-paragraph redirect-paragraph"
+        ".... gears ....";
 }
 
-#thank-you{
+#thank-you {
     grid-area: thank-you;
     justify-self: center;
     font-size: 24rem;
@@ -659,98 +719,119 @@ font-size: 1.7rem;
     letter-spacing: 1.4rem;
     text-shadow: 2rem 0.5rem 2rem var(--secondary-color-light);
 }
-.confirmation-paragraph{
+
+.confirmation-paragraph {
     margin: 2rem 1rem;
     font-size: 2.5rem;
     justify-self: center;
-    }
-#processing-paragraph{
+}
+
+#processing-paragraph {
     grid-area: processing-paragraph;
 }
-#contact-paragraph{
+
+#contact-paragraph {
     grid-area: contact-paragraph;
 }
-#contact-paragraph span{
+
+#contact-paragraph span {
     color: var(--secondary-color);
 }
-#redirect-paragraph{
+
+#redirect-paragraph {
     grid-area: redirect-paragraph;
 }
-#home-redirect-link{
+
+#home-redirect-link {
     font-size: inherit;
     color: var(--complimentary-color-light);
 }
-#loading-ball{
-    border-radius: 50%;
+
+/* Contains each gear for the loading animation */
+#loading-ball {
     grid-area: gears;
     justify-self: center;
     margin-top: 5rem;
     font-size: 5rem;
 }
-#left-cog{
-transform: translateX(1.5rem);
-color: var(--secondary-color); 
-animation: 1000ms linear infinite backwards left-cog-rotation
+
+#left-cog {
+    transform: translateX(1.5rem);
+    color: var(--secondary-color);
+    animation: 1000ms linear infinite backwards left-cog-rotation
 }
-#middle-cog{
-    color: var(--complimentary-color-light); 
-animation: 1000ms linear infinite backwards middle-cog-rotation
+
+#middle-cog {
+    color: var(--complimentary-color-light);
+    animation: 1000ms linear infinite backwards middle-cog-rotation
 }
-#right-cog{
- transform: translateX(-1.5rem);
- color: var(--secondary-color); 
-animation: 1000ms linear infinite backwards right-cog-rotation
+
+#right-cog {
+    transform: translateX(-1.5rem);
+    color: var(--secondary-color);
+    animation: 1000ms linear infinite backwards right-cog-rotation
 }
-    /* Animations */
+
+/* Animations */
+/* Animation for sign-up button on gym cards in index.html */
 @keyframes shake {
     0% {
-    transform: rotate(-15deg) translateX(1.5rem);
+        transform: rotate(-15deg) translateX(1.5rem);
     }
+
     20% {
-    color: yellow;
-    transform: rotate(15deg) translateX(-1.5rem);
+        color: yellow;
+        transform: rotate(15deg) translateX(-1.5rem);
     }
+
     40% {
-    transform: rotate(-15deg) translateX(1.5rem);
+        transform: rotate(-15deg) translateX(1.5rem);
     }
+
     60% {
-    color: yellow;
-    transform: rotate(50deg) translateX(-1.5rem);
-    }    
+        color: yellow;
+        transform: rotate(50deg) translateX(-1.5rem);
+    }
+
     80% {
-    transform: rotate(-65deg) translateX(1.5rem);
+        transform: rotate(-65deg) translateX(1.5rem);
     }
+
     100% {
-    color: yellow;
-    transform: rotate(-15deg) translateX(1.5rem);
-    }
-} 
-@keyframes left-cog-rotation{
-0%{
-    transform:  translateX(1.5rem) rotateZ(30deg);
-}
-100%{
-    transform: translateX(1.5rem) rotateZ(390deg);
-}
-}
-@keyframes middle-cog-rotation{
-    0%{
-        
-    }
-    100%{
-        transform:rotateZ(-360deg);
+        color: yellow;
+        transform: rotate(-15deg) translateX(1.5rem);
     }
 }
-@keyframes right-cog-rotation{
-    0%{
-        transform:  translateX(-1.5rem) rotateZ(30deg);
+/* Animation for left cog in confirmation.html */
+@keyframes left-cog-rotation {
+    0% {
+        transform: translateX(1.5rem) rotateZ(30deg);
     }
-    100%{
+
+    100% {
+        transform: translateX(1.5rem) rotateZ(390deg);
+    }
+}
+/* Animation for middle cog in confirmation.html */
+@keyframes middle-cog-rotation {
+    0% {}
+
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}
+/* Animation for right cog in confirmation.html */
+@keyframes right-cog-rotation {
+    0% {
+        transform: translateX(-1.5rem) rotateZ(30deg);
+    }
+
+    100% {
         transform: translateX(-1.5rem) rotateZ(390deg);
     }
-    }
-/* Hover effects */
+}
 
+/* Hover effects */
 /* For navbar and image color effect on hover */
 header a:after, #gallery a:after {
     width: 0;
@@ -762,218 +843,267 @@ header a:after, #gallery a:after {
     height: 0.4rem;
     transition: width 400ms, background-color 1200ms;
 }
- header a:hover:after, #gallery a:hover:after{ /*change #gallery a:hover:after to #gallery figure:hover a:after to add color effect when hover on caption*/
+
+header a:hover:after, #gallery a:hover:after {/*change #gallery a:hover:after to #gallery figure:hover a:after to add color effect when hover on caption*/
     width: 100%;
     background-color: var(--complimentary-color-light);
 }
 
 /* Image zoom effect on hover */
-.image-holder:hover img{
+.image-holder:hover img {
     transform: scale(1.25);
 }
+
 /* Show image caption on hover */
-.image-holder:hover .image-caption{
-transform: scale(1);
+.image-holder:hover .image-caption {
+    transform: scale(1);
 }
+
 /* footer social media icons hover effect */
-.fa-brands:hover{
+.fa-brands:hover {
     color: var(--complimentary-color-light);
     transform: scale(1.1);
 }
+
 /* gym card sign up button hover/shake effect */
-.gym-card button:hover{
+.gym-card button:hover {
     animation-name: shake;
     animation-duration: 1500ms;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
 }
+
 /* Monitor View 1600px - 2000px */
 @media only screen and (max-width: 2000px) {
+    /* index.html */
     body {
         grid-template-columns: 26rem repeat(3, 1fr) 26rem;
-}
-#gym-class-cards{
-grid-template-columns: 1fr 1fr;
-grid-gap: 4rem;
-}
-#gym-class-cards-header {
-grid-column: 1/3;
-}
-/* sign up page */
-#sign-up-form{
-grid-template-columns: minmax(0,20rem) 1fr 8rem 1fr minmax(0,20rem);
-grid-template-areas:
-". membership-image . free-trial-image ." 
-". membership-form . free-trial-form .";
-}
-#membership-form-container{
-    grid-template-columns: 1fr;
-}
-#membership-form-image{
-    aspect-ratio: 3/2;
-}
-#membership-form{
-    grid-column: 1/2;
-    display: grid;
-    grid-template-columns: minmax(50rem, 1fr);
-}
-#last-name-container,#phone-number-container,#dob-container{
-    grid-column: 1/2;
-}
-#classes-question{
-    text-align: start;
-}
-#classes-container{
-    grid-column: 1/2;
-}
-#medical-history-container{
-    grid-column: 1/2;
-}
-.membership-options{
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column: 1/2;
-}
+    }
 
-#monthly-container{
-    grid-column-start: 1;
+    #gym-class-cards {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4rem;
     }
-    #quarterly-container{
-    grid-column-start: 2;
+
+    #gym-class-cards-header {
+        grid-column: 1/3;
     }
-    #biannual-container{
-    grid-column-start: 3;
+
+    /* sign-up.html */
+    #sign-up-form {
+        grid-template-columns: minmax(0, 20rem) 1fr 8rem 1fr minmax(0, 20rem);
+        grid-template-areas:
+            ". membership-image . free-trial-image ."
+            ". membership-form . free-trial-form .";
     }
-    #membership-submit-button{
+
+    #membership-form-container {
+        grid-template-columns: 1fr;
+    }
+
+    #membership-form-image {
+        aspect-ratio: 3/2;
+    }
+
+    #membership-form {
+        grid-column: 1/2;
+        display: grid;
+        grid-template-columns: minmax(50rem, 1fr);
+    }
+
+    #last-name-container, #phone-number-container, #dob-container {
         grid-column: 1/2;
     }
-    #free-trial-submit-button{
+
+    #classes-question {
+        text-align: start;
+    }
+
+    #classes-container {
+        grid-column: 1/2;
+    }
+
+    #medical-history-container {
+        grid-column: 1/2;
+    }
+
+    .membership-options {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column: 1/2;
+    }
+
+    #monthly-container {
+        grid-column-start: 1;
+    }
+
+    #quarterly-container {
+        grid-column-start: 2;
+    }
+
+    #biannual-container {
+        grid-column-start: 3;
+    }
+
+    #membership-submit-button {
+        grid-column: 1/2;
+    }
+
+    #free-trial-submit-button {
         justify-self: end;
         width: 100%;
     }
 }
 
-/* large laptop View 1200px - 1600px */
+/* Large laptop View 1200px - 1600px */
 @media only screen and (max-width: 1600px) {
     body {
-            grid-template-columns: 18rem repeat(3, 1fr) 18rem;
+        grid-template-columns: 18rem repeat(3, 1fr) 18rem;
     }
-    .subscription-container h3{
+
+    .subscription-container h3 {
         font-size: 1.75rem;
     }
+
     /* confirmation page */
-    #thank-you{
+    #thank-you {
         font-size: 23rem;
         text-shadow: 1.75rem 0.3rem 1.35rem var(--secondary-color-light);
-}
-@media only screen and (max-width: 1400px) {
-    #sign-up-form{
-        grid-template-columns: minmax(0,7rem) 1fr minmax(0,7rem);
-        grid-template-areas:
-        ". membership-image ." 
-        ". membership-form ."
-        ". free-trial-image ."
-        ". free-trial-form ."
-        ;
-        }
-        #membership-form-image{
-            aspect-ratio: 3/1;
-        }
-        #free-trial-image{
-            aspect-ratio: 3/1;
-        }
-        #free-trial-container{
-            grid-area: free-trial-form;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: repeat(5, auto);
-        
-        }
-        #free-trial-container p, #free-trial-container h2,#free-trial-classes{
-        margin-bottom: 3rem;
-        }
-        /* confirmation page */
-    #confirmation-container{
-        grid-template-columns: minmax(0, 1fr) minmax(20rem, 1fr) minmax(0, 1fr); /* 20rem minmax in centre column to keep gears from moving down when column is too small */
-   }
-   #thank-you{
-       font-size: 17.5rem;
-       text-shadow: 1.5rem 0.6rem 2rem var(--secondary-color-light);
-   }
-   .confirmation-paragraph{
-       font-size: 2rem;
-       text-align: center;
-       }
     }
+}
+
+@media only screen and (max-width: 1400px) {
+    #sign-up-form {
+        grid-template-columns: minmax(0, 7rem) 1fr minmax(0, 7rem);
+        grid-template-areas:
+            ". membership-image ."
+            ". membership-form ."
+            ". free-trial-image ."
+            ". free-trial-form .";
+    }
+
+    #membership-form-image {
+        aspect-ratio: 3/1;
+    }
+
+    #free-trial-image {
+        aspect-ratio: 3/1;
+    }
+
+    #free-trial-container {
+        grid-area: free-trial-form;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+    }
+
+    #free-trial-container p, #free-trial-container h2, #free-trial-classes {
+        margin-bottom: 3rem;
+    }
+
+    /* confirmation.html */
+    #confirmation-container {
+        /* 20rem minmax to keep gears from moving down when column is too small */
+        grid-template-columns: minmax(0, 1fr) minmax(20rem, 1fr) minmax(0, 1fr);
+    }
+
+    #thank-you {
+        font-size: 17.5rem;
+        text-shadow: 1.5rem 0.6rem 2rem var(--secondary-color-light);
+    }
+
+    .confirmation-paragraph {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
 /* Tablet/small laptop View 768px - 1200px */
 @media only screen and (max-width: 1200px) {
+    /* index.html */
     body {
-            grid-template-columns: 11rem repeat(3, 1fr) 11rem;
+        grid-template-columns: 11rem repeat(3, 1fr) 11rem;
     }
-h3{
-    font-size: 2.25rem;
-}
+
+    h3 {
+        font-size: 2.25rem;
+    }
+
     #about-us {
         grid-template-columns: 1fr;
         grid-gap: 1rem;
     }
-    #about-us h2{
+
+    #about-us h2 {
         grid-column: 1/2;
     }
-    #about-us h3{
+
+    #about-us h3 {
         padding-bottom: 0;
     }
-    #about-us-block{
+
+    #about-us-block {
         grid-column: 1/2;
     }
+
     #about-us-block ul {
         padding-left: 3.5rem;
     }
-    #about-us-block ul li{
+
+    #about-us-block ul li {
         padding-bottom: 2rem;
     }
-    #virtual-tour-block{
+
+    #virtual-tour-block {
         grid-column: 1/2;
     }
+
     footer {
         grid-template-columns: 1fr minmax(35rem, 1fr) minmax(45rem, 1fr) 1fr;
     }
-    
+
     /* gallery.html */
-    #gallery-header{
+    #gallery-header {
         font-size: 3.75rem;
     }
-/* controlling image row and column spans using utility classes */
-/* for smaller screens, we make the "big" pictures smaller */
-.big{
-    grid-column: span 1;
-    grid-row: span 1;
-}
-.big-landscape{
-    grid-column: span 2;
-    grid-row: span 1;
-}
-.big-portrait{
-    grid-column: span 1;
-    grid-row: span 2;
-}
-/* confirmation page */
-#thank-you{
-    font-size: 14.5rem;
-    text-shadow: 1.2rem 0.5rem 1.5rem var(--secondary-color-light);
-}
-}
-    @media only screen and (max-width: 1000px) {
-        body {
-            grid-template-columns: 10rem repeat(3, 1fr) 10rem;
+
+    /* For smaller screens, we make the "big" images in gallery.html smaller */
+    .big {
+        grid-column: span 1;
+        grid-row: span 1;
     }
-    #gym-class-cards{
+
+    .big-landscape {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .big-portrait {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+    /* confirmation.html */
+    #thank-you {
+        font-size: 14.5rem;
+        text-shadow: 1.2rem 0.5rem 1.5rem var(--secondary-color-light);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    /* index.html */
+    body {
+        grid-template-columns: 10rem repeat(3, 1fr) 10rem;
+    }
+
+    #gym-class-cards {
         grid-template-columns: 1fr;
         grid-gap: 4rem;
-        }
-        #gym-class-cards-header {
-            grid-column: 1/2;
-            }
-            /* Footer */    
+    }
+
+    #gym-class-cards-header {
+        grid-column: 1/2;
+    }
+
     footer {
         grid-area: footer;
         display: grid;
@@ -981,39 +1111,41 @@ h3{
         border-top: 0.3rem solid var(--secondary-color-dark);
         padding: 3.5rem;
         margin-top: 5rem;
-        }
-    
-        #contact-us-container{
+    }
+
+    #contact-us-container {
         grid-column: 1/2;
         justify-self: center;
-        }
-    
-        #google-maps {
+    }
+
+    #google-maps {
         grid-column: 1/2;
         max-width: 100%;
         height: 30rem;
         width: 100%;
         outline: 0.3rem solid var(--secondary-color-dark);
-        }
-    
-        #social-media-icons-container{
+    }
+
+    #social-media-icons-container {
         justify-content: space-between;
         padding-top: 0;
-        } 
-        .fa-brands{
-            font-size: 4.5rem;
-            padding-right: 0;
-        }
-        /* gallery */
-        #gallery-header{
-            font-size: 2.9rem;
-        }
-        /* confirmation page */
-         #thank-you{
-            font-size: 10rem;
-            text-shadow: 1rem 0.4rem 1.25rem var(--secondary-color-light);
-        }
-        
+    }
+
+    .fa-brands {
+        font-size: 4.5rem;
+        padding-right: 0;
+    }
+
+    /* gallery.html */
+    #gallery-header {
+        font-size: 2.9rem;
+    }
+
+    /* confirmation.html */
+    #thank-you {
+        font-size: 10rem;
+        text-shadow: 1rem 0.4rem 1.25rem var(--secondary-color-light);
+    }
 }
 
 /* Mobile View < 768px */
@@ -1021,107 +1153,126 @@ h3{
     body {
         display: grid;
         grid-template-columns: 4rem 1fr 4rem;
-        grid-template-areas: 
-        "header header header"
-        "hero-img hero-img hero-img"
-        "... gym-class-cards ..."
-        "... about-us ..."
-        "footer footer footer";
+        grid-template-areas:
+            "header header header"
+            "hero-img hero-img hero-img"
+            "... gym-class-cards ..."
+            "... about-us ..."
+            "footer footer footer";
     }
-h1 {
-    font-size: 3.5rem;
-    padding-top: 3rem;
-}
 
-h2{
-    font-size: 3rem;
-}
+    h1 {
+        font-size: 3.5rem;
+        padding-top: 3rem;
+    }
 
-a{
-    font-size: 2.5rem;
-}
-header {
-    padding: 2rem 0;
-}
-/* For navbar hover effect at smaller screens */
-header a:after{
-    bottom: 0;
-}
-#hero-img-container img {
-    height: 30rem;
-    max-height: 100%;
-}
-header ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    font-size: 3rem;
-}
+    h2 {
+        font-size: 3rem;
+    }
+
+    a {
+        font-size: 2.5rem;
+    }
+
+    header {
+        padding: 2rem 0;
+    }
+
+    /* For navbar hover effect at smaller screens */
+    header a:after {
+        bottom: 0;
+    }
+
+    #hero-img-container img {
+        height: 30rem;
+        max-height: 100%;
+    }
+
+    header ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        font-size: 3rem;
+    }
+
     #gym-class-cards-header {
-    margin-bottom: -2rem;
+        margin-bottom: -2rem;
     }
-    .gym-card button{
+
+    .gym-card button {
         font-size: 2rem;
     }
 
-    #social-media-icons-container{
+    #social-media-icons-container {
         justify-content: space-between;
-    }  
-    /*gallery */
-    #gallery-header-container{
-        grid-column: 2/3;
-    grid-template-rows: 1fr 1fr;
     }
-    #gallery-header{
+
+    /* gallery.html */
+    #gallery-header-container {
+        grid-column: 2/3;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #gallery-header {
         font-size: 1.9rem;
     }
-    #gallery-click-message,#gallery-hover-message{
+
+    #gallery-click-message, #gallery-hover-message {
         font-size: 1.3rem;
     }
-    #gallery{
+
+    #gallery {
         grid-column: 1/4;
         grid-template-columns: 4rem 1fr 4rem;
         grid-gap: 0.5rem;
     }
-    .image-holder{
+
+    .image-holder {
         grid-column: 2/3;
         padding: 0.3rem;
     }
-    
-/*controlling image row and column spans using utility classes*/
-.landscape{
-    grid-column: 2/3;
-    grid-row: span 1;
-}
-.big-landscape{
-    grid-column: 2/3;
-    grid-row: span 1;
-}
-/* sign up page */
-#membership-form{
-    grid-template-columns: minmax(35rem, 1fr);
-}
-#sign-up-form{
-    grid-template-columns: minmax(0, 4rem) 1fr minmax(0, 4rem);
-}
-.membership-options{
-    grid-template-columns: 5rem 1fr 5rem;
-    grid-template-rows: 15rem 15rem 15rem;
-}
 
-#monthly-container,#quarterly-container,#biannual-container{
-    grid-column-start: 2;
+    /* For smaller screens, we make the "big" images in gallery.html smaller */
+    .landscape {
+        grid-column: 2/3;
+        grid-row: span 1;
     }
-    #classes-container{
+
+    .big-landscape {
+        grid-column: 2/3;
+        grid-row: span 1;
+    }
+
+    /* signup.html */
+    #membership-form {
+        grid-template-columns: minmax(35rem, 1fr);
+    }
+
+    #sign-up-form {
+        grid-template-columns: minmax(0, 4rem) 1fr minmax(0, 4rem);
+    }
+
+    .membership-options {
+        grid-template-columns: 5rem 1fr 5rem;
+        grid-template-rows: 15rem 15rem 15rem;
+    }
+
+    #monthly-container, #quarterly-container, #biannual-container {
+        grid-column-start: 2;
+    }
+
+    #classes-container {
         grid-template-columns: repeat(2, 1fr);
-}
-/* confirmation page */
-#thank-you{
-    text-align: center;
-    text-shadow: 1rem 0.4rem 1.25rem var(--secondary-color-light);
-    line-height: 12rem;
-}
-#confirmation-container {
-    grid-column: 2/3;
-}
+    }
+
+    /* confirmation.html */
+    #thank-you {
+        text-align: center;
+        text-shadow: 1rem 0.4rem 1.25rem var(--secondary-color-light);
+        line-height: 12rem;
+    }
+
+    #confirmation-container {
+        grid-column: 2/3;
+    }
 }
