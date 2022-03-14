@@ -175,6 +175,7 @@ header ul {
     border: none;
     font-size: 2rem;
     background-color: transparent;
+    margin-top: auto;
 }
 
 /* About us and virtual video tour section */
