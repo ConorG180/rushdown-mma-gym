@@ -273,6 +273,7 @@ footer {
     font-size: 5rem;
     width: 100%;
 }
+
 #social-media-icons-container a{
     margin-right: 3rem;
 }
@@ -1224,24 +1225,25 @@ header a:hover:after, #gallery a:hover:after {/*change #gallery a:hover:after to
 
     #gallery {
         grid-column: 1/4;
-        grid-template-columns: 4rem 1fr 4rem;
+        grid-template-columns: 8rem 1fr 8rem;
         grid-gap: 0.5rem;
     }
 
+    /* For very small screens, such as small tablets/mobiles, we turn all images the same size. */
     .image-holder {
         grid-column: 2/3;
+        grid-row: span 2;
         padding: 0.3rem;
     }
 
-    /* For smaller screens, we make the "big" images in gallery.html smaller */
     .landscape {
         grid-column: 2/3;
-        grid-row: span 1;
+        grid-row: span 2;
     }
 
     .big-landscape {
         grid-column: 2/3;
-        grid-row: span 1;
+        grid-row: span 2;
     }
 
     /* signup.html */
