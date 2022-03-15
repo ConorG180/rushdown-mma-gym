@@ -1232,25 +1232,23 @@ header a:hover:after, #gallery a:hover:after {/*change #gallery a:hover:after to
 
     #gallery {
         grid-column: 1/4;
-        grid-template-columns: 8rem 1fr 8rem;
+        grid-template-columns: 1rem 1fr 1rem;
         grid-gap: 0.5rem;
     }
 
     /* For very small screens, such as small tablets/mobiles, we turn all images the same size. */
     .image-holder {
-        grid-column: 2/3;
-        grid-row: span 2;
         padding: 0.3rem;
     }
 
-    .landscape {
+    .image-holder, .big {
         grid-column: 2/3;
         grid-row: span 2;
     }
 
-    .big-landscape {
+    .landscape, .big-landscape {
         grid-column: 2/3;
-        grid-row: span 2;
+        grid-row: span 1;
     }
 
     /* signup.html */
@@ -1284,5 +1282,31 @@ header a:hover:after, #gallery a:hover:after {/*change #gallery a:hover:after to
 
     #confirmation-container {
         grid-column: 2/3;
+    }
+}
+
+/* Small mobile View < 450px */
+@media only screen and (max-width: 450px) {
+    .image-holder, .big {
+        grid-row: span 1;
+    }
+
+    #gallery-header-container {
+        grid-column: 1/4;
+        grid-template-rows: auto auto auto; 
+        grid-template-areas:
+            "header header header"
+            "click-message ... ... "
+            "hover-message ... ...";
+        margin-top: 2rem;
+    } 
+
+    #gallery-hover-message, #gallery-click-message{
+        justify-self: start;
+        margin-left: 1rem;
+    }
+    
+    #gallery-header{
+        margin-bottom: 2rem;
     }
 }
