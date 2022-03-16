@@ -273,7 +273,6 @@ footer {
     list-style-type: none;
     padding-top: 3rem;
     font-size: 5rem;
-    width: 100%;
 }
 
 #social-media-icons-container a{
@@ -1118,13 +1117,14 @@ header a:hover:after, #gallery a:hover:after {/*change #gallery a:hover:after to
         display: grid;
         grid-template-columns: 1fr;
         border-top: 0.3rem solid var(--secondary-color-dark);
-        padding: 3.5rem;
+        padding: 3.5rem 0 4.5rem 0;
         margin-top: 5rem;
     }
 
     #contact-us-container {
         grid-column: 1/2;
         justify-self: center;
+        margin: 0 1rem;
     }
 
     #google-maps {
@@ -1138,6 +1138,7 @@ header a:hover:after, #gallery a:hover:after {/*change #gallery a:hover:after to
     #social-media-icons-container {
         justify-content: space-between;
         padding-top: 0;
+        align-self: center;
     }
 
     .fa-brands {
@@ -1212,10 +1213,6 @@ header a:hover:after, #gallery a:hover:after {/*change #gallery a:hover:after to
         font-size: 2rem;
     }
 
-    #social-media-icons-container {
-        justify-content: space-between;
-    }
-
     /* gallery.html */
     #gallery-header-container {
         grid-column: 2/3;
@@ -1287,6 +1284,18 @@ header a:hover:after, #gallery a:hover:after {/*change #gallery a:hover:after to
 
 /* Small mobile View < 450px */
 @media only screen and (max-width: 450px) {
+    body{
+        grid-template-columns: 1rem 1fr 1rem;
+    }
+
+    .fa-brands {
+        font-size: 3.5rem;
+    }
+
+    #social-media-icons-container a{
+        margin-right: 2.5rem;
+    }
+    
     .image-holder, .big {
         grid-row: span 1;
     }
