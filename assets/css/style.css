@@ -434,7 +434,6 @@ footer {
 
 #membership-form-image {
     grid-area: membership-image;
-    object-position: 50% 25%;
     aspect-ratio: 3/1;
 }
 
@@ -470,7 +469,7 @@ footer {
 
 .form-element-container input, .form-element-container select  {
     width: 100%;
-    height: 4rem;
+    height: 3rem;
 }
 
 .form-element-container label {
@@ -522,7 +521,7 @@ footer {
 
 .checkbox-container {
     display: grid;
-    grid-template-columns: 5rem 12rem;
+    grid-template-columns: 3rem 9rem;
     align-items: center;
     justify-content: center;
     justify-self: center;
@@ -980,6 +979,7 @@ header a:hover:after, #gallery a:hover:after {/*change #gallery a:hover:after to
 }
 
 @media only screen and (max-width: 1400px) {
+    /* sign-up.html */
     #sign-up-form {
         grid-template-columns: minmax(0, 7rem) 1fr minmax(0, 7rem);
         grid-template-areas:
@@ -1248,13 +1248,13 @@ header a:hover:after, #gallery a:hover:after {/*change #gallery a:hover:after to
         grid-row: span 1;
     }
 
-    /* signup.html */
-    #membership-form {
-        grid-template-columns: minmax(35rem, 1fr);
-    }
-
+    /* sign-up.html */
     #sign-up-form {
         grid-template-columns: minmax(0, 4rem) 1fr minmax(0, 4rem);
+    }
+
+    #membership-form {
+        grid-template-columns: minmax(30rem, 1fr);
     }
 
     .membership-options {
@@ -1284,6 +1284,7 @@ header a:hover:after, #gallery a:hover:after {/*change #gallery a:hover:after to
 
 /* Small mobile View < 450px */
 @media only screen and (max-width: 450px) {
+    /* index.html */
     body{
         grid-template-columns: 1rem 1fr 1rem;
     }
@@ -1300,6 +1301,7 @@ header a:hover:after, #gallery a:hover:after {/*change #gallery a:hover:after to
         grid-row: span 1;
     }
 
+    /* gallery.html */
     #gallery-header-container {
         grid-column: 1/4;
         grid-template-rows: auto auto auto; 
@@ -1317,5 +1319,10 @@ header a:hover:after, #gallery a:hover:after {/*change #gallery a:hover:after to
     
     #gallery-header{
         margin-bottom: 2rem;
+    }
+
+    /* sign-up.html */
+    #sign-up-form {
+        grid-template-columns: minmax(0, 1rem) 1fr minmax(0, 1rem);
     }
 }
