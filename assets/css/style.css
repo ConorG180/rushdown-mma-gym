@@ -736,7 +736,9 @@ footer {
 }
 
 #contact-paragraph span {
-    color: var(--secondary-color);
+    color: var(--secondary-color-light);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
 }
 
 #redirect-paragraph {
@@ -815,7 +817,6 @@ footer {
 }
 /* Animation for middle cog in confirmation.html */
 @keyframes middle-cog-rotation {
-    0% {}
 
     100% {
         transform: rotateZ(-360deg);
