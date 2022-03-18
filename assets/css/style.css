@@ -88,6 +88,10 @@ body {
     font-family: var(--primary-font);
 }
 
+::-webkit-scrollbar{
+display: none;
+}
+
 /* Header */
 header {
     grid-area: header;
