@@ -4,7 +4,7 @@
 # Rushdown 
 The sport of mixed martial arts has exploded in popularity in recent years. It is clear that there is a growing demand to participate and learn about the sport. Various famous fighters have emerged from Ireland in the past few years, including "The Notorious" Conor Mcgregor, along with other reputable fighters such as Normin Parke and Joe Duffy. Rushdown MMA attempts to supply this demand and offer everyone from MMA enthusiasts to professional UFC stars a place to train and improve upon their technique. This project aims to create a website for the company, and showcase how it can help the MMA community improve their skills, fitness and technique.  
 The full **[Rushdown](https://conorg180.github.io/rushdown-mma-gym/index.html)** website can be seen here.
-<img width ="1000" alt ="RushdownLogo" src ="/workspace/rushdown-mma-gym/assets/images/rushdown-amiresponsive-image.png">
+<img width ="1000" alt ="image showing responsiveness of site across multiple devices" src ="assets/images/rushdown-amiresponsive-image.png">
 # UX design
 The website is designed so that the user can easily understand and process what each webpage's main theme is with minimal effort and in a short amount of time. For this reason, the webpages are not overcrowded with information that may deemed to be irrelevant. It's design, whilst aesthetic, was in fact made to be minimalist. Fonts and colors were chosen with accessibility being the top priority, but whilst also having a visually-appealing quality to them.  
 Key, important features of the website, are highlighted in a different color font and/or placed strategically. For example, the sign-up button is on the top left of the page, which is generally one of the first things that the user will notice. Also, various sign up links, such as those on the gym cards, are highlighted in yellow. There are also various "hover" animations to draw the user to the button when hovering.  
@@ -14,16 +14,16 @@ Furthermore, to ensure an optimal user experience while keeping a simple interfa
 The color scheme chosen for this website is based on a monochromatic color scheme, but also consists of some complimentary colors to draw the user's attention to certain areas of the page, such as on the sign-up buttons. The colors were chosen with the help of [mycolor.space](https://mycolor.space/)
 - The color's red, black and yellow were chosen so as to design "strong" and eye-catching aspects of the website. As the company is an MMA gym, it was thought that this combination of colors would work well with the theme that this company wants to convey.
 - There are multiple shades of primary colors which allows for stylistic, monochromatic styling throughout each page. An example of this can be seen in the borders of certain elements on each page, which use a darker version of the website's primary color. 
-- Futhermore, the website can be easily changed in the future if needed due to the use of CSS root variable in the project. The colors can be seen in the below image:
-<!-- screenshot direct from css. -->
+- Futhermore, the website can be easily changed in the future if needed due to the use of CSS root variable in the project. The colors can be seen in the below image:  
+ <img width ="700" alt ="Color root variables" src ="assets/images/color-root-variables.png">
 ## Layout
 Grid is the primary css function used in building the layout to this website, and it was chosen for multiple reasons:
  - With grid, it is very easy to reposition and even swap elements on the website in the future if needed.
  - Grid allows responsive designs to be carried out easily, and it was thought that it would be a great choice since responsiveness is a high priority in this project. Elements can be programmed to scale down to a minimum and maximum size, and can then easily be changed as needed when using media queries.
  - This project includes a lot of images, including a whole gallery page. With grid, it is a lot easier to work with so many images, as it allows the developer to change many pictures sizes/aspect ratios at once by simply changing the size of the grid, or spanning pictures across different rows/columns etc. This can be seen in the gallery, where some pictures have classes such as "landscape" or "big" which span more or less rows/columns depending on their class. This also allows the code to be reusable.
  ## Typography
- As with colors, root variables were used to store various fonts and back-up fonts. These can be seen below:
-  <!-- screenshot direct from css. -->
+ As with colors, root variables were used to store various fonts and back-up fonts. These can be seen below:  
+ <img width ="700" alt ="Font root variables" src ="assets/images/font-root-variables.png">
   - Bebas Neue was chosen as the main accent font for the project due to it's easy-to-read and clear edges used throughout font. It was found to be particularly useful for the "Rushdown" logo and navigation links within the header. All letters in the Bebas Neue font are capitalised, so whilst great for main headers and links, a different font was decided on for smaller headings.
   - Oswald was chosen as the websites secondary-header (h2 - h6) font. It can be seen in smaller headers throughout the website, such as on the gym card headers. Unlike Bebas Neue, Oswald allows for lowercase letters too. It has long been reknowned as a fashionable eye-catching font, and it seemed to work very well when working with smaller headers.
   - Poppins was chosen as the website's main "text" font. This font is used in all paragraphs and descriptions throughout the website. Each letterform in poppins in almost monolinear, and it is designed to maintain an even typographic color throughout it's usage.
@@ -31,9 +31,9 @@ Grid is the primary css function used in building the layout to this website, an
 
 ## Wireframes
 Before starting development on the project, Balsamiq was used to form wireframes for each separate page. Basamiq was chosen due to it's efficiency and it's ability to reproduce relatively simplistic, yet easy to understand wireframes. This helped me to visualise ideas for the pages and organise how certain features would be laid out in the website. The [confirmation.html](https://conorg180.github.io/rushdown-mma-gym/confirmation.html?chosen-free-trial=Brazillian-jiu-jitsu) page which appears once a user has signed up to the gym or a free trial was not originally included in the wireframes, as this idea was only realised towards the end of the project.  
-<img width ="400" height = "700" alt ="index.html wireframe" src ="/workspace/rushdown-mma-gym/assets/images/index.html-wireframe.png">
-<img width ="400" height = "700" alt ="sign-up.html wireframe wireframe" src ="/workspace/rushdown-mma-gym/assets/images/sign-up.html-wireframe.png">
-<img width ="400" alt ="gallery.html wireframe" src ="/workspace/rushdown-mma-gym/assets/images/gallery.html-wireframe.png">
+<img width ="400" height = "700" alt ="index.html wireframe" src ="assets/images/index.html-wireframe.png">
+<img width ="400" height = "700" alt ="sign-up.html wireframe wireframe" src ="assets/images/sign-up.html-wireframe.png">
+<img width ="400" alt ="gallery.html wireframe" src ="assets/images/gallery.html-wireframe.png">
 
 
 
