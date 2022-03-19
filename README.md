@@ -54,7 +54,16 @@ In order to make a local copy of this project, you can clone it. In your IDE Ter
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ConorG180/rushdown-mma-gym)
- to be changed so that the first option in the select element had a blank "value" attribute.
+
+ # Technologies used
+ The following technologies were used in the development of this project
+  - [html](https://developer.mozilla.org/en-US/docs/Web/HTML) - html was used to apply the structure and to create the elements of each webpage in the project.
+  - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - CSS was used to style each page of the project and controls the layout, color scheme, animations, hover-effects and image-sizing.
+  - [Git](https://git-scm.com/) - Git was used for version control throughout this project.
+  - [Balsamiq](https://balsamiq.com/) - Balsamiq was used to create wireframes at the beginning of the project and aided in visualising ideas and features of the website
+  - [Gitpod](https://www.gitpod.io/) - Gitpod was used as the integrated developement environment for the website and to deploy the website.
+  - [Github](https://github.com/) - Github was used to host the project through Github pages.
+
 
 
 
