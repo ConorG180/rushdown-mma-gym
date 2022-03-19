@@ -1,6 +1,7 @@
 # Testing
 
 ## Browser Compatability
+Testing of the website was carried out in Firefox, Microsoft Edge, Opera and Google Chrome. The website seemed to work without on any issues on the above browsers. However, some older versions of firefox in particular may not support the "aspect-ratio" property of CSS which is used on images, which caused some bugs. However, new versions of Firefox do support aspect-ratio, so this should not be an issue for most users.
 
 ## Code Validation and identified bugs
 
@@ -66,7 +67,8 @@ W3 html validator was used on each html document within the project to confirm t
  <img width="475" height="200" alt ="W3C validator styles.css testing image before bugs" src ="assets/images/styles.css-bugs-from-w3c-validator.png">
  <img width="400" height="175" alt ="W3C validator styles.css testing image after bugs" src ="assets/images/styles.css-fixed-from-w3c-validator.png">
 
-## Responsiveness
+# Responsiveness
+##Amiresponsive
   Amiresponsive is a website which was used to test how the website will appear across different devices.
 - Whilst testing with amiresponsive, one element of the website seemed to portray a negative user experience; the scrollbar. Whilst being necessary, it was deemed to be unesthetic.
   - To fix this, the scrollbar was hidden, but it's functionality was kept.
