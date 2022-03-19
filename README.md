@@ -35,6 +35,63 @@ Before starting development on the project, Balsamiq was used to form wireframes
 <img width ="400" height = "700" alt ="sign-up.html wireframe wireframe" src ="assets/images/sign-up.html-wireframe.png">
 <img width ="400" alt ="gallery.html wireframe" src ="assets/images/gallery.html-wireframe.png">
 
+# Features
+## Existing features
+
+### Header and navigation
+The header is used univerally throughout all pages in the website and always remains the same. The exception to this is at smaller screen sizes, where navigation links are stacked on top of eachother to accomodate for the user's smaller screen size.
+- The header includes links to the all pages within the document (With the exception of the confirmation.html document) and allows for simple user navigation. 
+- Animations were also added to each navbar link to increase the user experience and provide an appealing look when hovering over links.  
+  #### **Images**  
+    <img width="800" alt="header and navbar of the website" src="assets/images/feature-image-navbar.png">
+
+### Footer
+Like the header, the footer is designed to remain consistent in it's style throughout the website, with the exception again being found at smaller screen sizes. 
+- The footer contains contact information for RushDown MMA including the company's contact details, a location of the gym on Google Maps, and links to all the gym's social media accounts.
+- There is also a "Contact us" link in the header of the website which will redirect users to the footer of the website, where all the contact information is stored.  
+  #### **Images**  
+    <img width="800" alt="" src="assets/images/feature-image-footer.png">
+
+### Homepage(index.html)
+The homepage is the first page that the user will see, and so, it is vital that this page provides a positive and intuitive user experience. The homepage is designed to show the core information about the gym that the user will want to know. 
+- Included is a description of each gym class that the gym offers, along with a sign-up button within each class card so that the user can easily access the sign-up page.  
+- There is also an about us section, which allows the user to read about how the gym was formed and about it's owner.
+- A gym tour was designed into the homepage to allow the user to instantly get a feel for what the gym looks like on the inside. controls were input so that the user can pause, rewind and skip through the video as the please.  
+  #### **Images**  
+    <img width="800" alt="" src="assets/images/feature-image-gymcards.png">
+    <img width="800" alt="" src="assets/images/feature-image-about-us.png">
+
+### Gallery (gallery.html)
+The gallery page within the website aims to showcase the true, raw images of the gym and it's various aspects, themes and principals.
+- Images in the gallery showcase classes, competitions, comradery amongst teammates, the physical features of the gym, the instructors, and various sparring sessions amongst members.
+- The gallery also includes various features such as captions which appear on the images when hovering, and the ability to click on images to view them full size in a different tab.
+- Different aspect ratios were applied to different images (By way of CSS classes) To allow certain images to appear in their natural ratio (some images may be portrait, landscape, or square etc). By doing this, images come across as more aesthetic to the user and it minimises the effect of images being cut off/cropped.   
+  #### **Images**  
+    <img width="800" alt="" src="assets/images/feature-image-gallery.png">
+
+### Sign up page (sign-up.html)
+The sign up page allows the user to easily and quickly sign up to the gym membership, whilst also collecting all necessary information required for the application. 
+- Both forms are designed so that they can be filled in quickly and without any complications. 
+- The membership form allows the user to express which classes they have an interest in, and enables them to choose different membership/payment options.  
+- There is a free trial form included in the sign up page for those who may be unsure of committing to the gym completely, but who still want to trial it. This form simply asks for which class they want to trial, which was deemed to be accepatable since they are not applying for a full membership.  
+  #### **Images**
+    <img width="800" alt="ddd" src="assets/images/feature-image-sign-up-forms.png">
+
+### Confirmation page (confirmation.html)
+The confirimation page is the most simple of all the pages built in this project, and is simply there to provide a more professional experience once the user signs up to the gym in the form of a membership, or completes a form to join a free trial class. The confirmation page is designed to offer a quick summary of the company's gratitude for signing up (By saying thank you), reminding the user of the company's contact information, and also includes a link to redirect the user back to the homepage should they not be redirected due to a bug.  
+  #### **Images**
+  <img width="800" alt="" src="assets/images/feature-image-confirmation.png">
+
+## Future features
+There are some features which I believe could be a good idea to implement in the future, along with some other features which could be rebuilt to be better.
+- In the confirmation.html page, it may be a good idea to rebuild the redirect feature. At the moment, a "refresh" type meta tag is being used to redirect the user back to the homepage. However, This has slightly lowered the accessibility of the page acording to lighthouse. It is possible that Javascript may be a better alternative to achieve this outcome, as doing so would increase the accessibility score of the page.
+- A "news" page for the website which shows articles/social media posts related with the gym, upcoming events, and member's competition results may be a good page to implement.
+- A timetable outlining the gym's class schedule and which instructors are teaching the class could be a great feature to design. The timetable could also use a color-coded system to highlight the difficulty level of the class, such as beginner, intermediate, advanced etc.
+- Member's accounts. This feature would allow members to create an account and log in, which may give them extra features such as being able to book a class in advance and book personal training/combat sessions with specific gym instructors.
+
+# Testing and bugs
+For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
  # Technologies used
  The following technologies were used in the development of this project
   - [html](https://developer.mozilla.org/en-US/docs/Web/HTML) - html was used to apply the structure and to create the elements of each webpage in the project.
@@ -43,9 +100,6 @@ Before starting development on the project, Balsamiq was used to form wireframes
   - [Balsamiq](https://balsamiq.com/) - Balsamiq was used to create wireframes at the beginning of the project and aided in visualising ideas and features of the website
   - [Gitpod](https://www.gitpod.io/) - Gitpod was used as the integrated developement environment for the website and to deploy the website.
   - [Github](https://github.com/) - Github was used to host the project through Github pages.
-
-# Testing and bugs
-For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 # Deployment
 The site was deployed to GitHub pages. The steps to deploy are as follows: 
@@ -67,7 +121,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 # Credits
 ## Content
 The sources below were used when trying to solve intricate problems within the programme and played a solid role in helping me to build this project.
- - [w3schools.com](https://www.w3schools.com/) was used as a learning resource and helped me with html and CSS.
+ - [W3schools](https://www.w3schools.com/) was used as a learning resource and helped me with html and CSS.
  - Kevin Powell's [Youtube Channel](https://www.youtube.com/kepowob) was used as a learning resource and helped me with html and CSS .
  - [Stack Overflow](https://stackoverflow.com/) was used as a learning resource and helped me with html and CSS.
  - [ColorSpace](https://mycolor.space/) aided me in designing a color theme for the website.
