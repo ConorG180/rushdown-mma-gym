@@ -35,6 +35,15 @@ Before starting development on the project, Balsamiq was used to form wireframes
 <img width ="400" height = "700" alt ="sign-up.html wireframe wireframe" src ="assets/images/sign-up.html-wireframe.png">
 <img width ="400" alt ="gallery.html wireframe" src ="assets/images/gallery.html-wireframe.png">
 
+ # Technologies used
+ The following technologies were used in the development of this project
+  - [html](https://developer.mozilla.org/en-US/docs/Web/HTML) - html was used to apply the structure and to create the elements of each webpage in the project.
+  - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - CSS was used to style each page of the project and controls the layout, color scheme, animations, hover-effects and image-sizing.
+  - [Git](https://git-scm.com/) - Git was used for version control throughout this project.
+  - [Balsamiq](https://balsamiq.com/) - Balsamiq was used to create wireframes at the beginning of the project and aided in visualising ideas and features of the website
+  - [Gitpod](https://www.gitpod.io/) - Gitpod was used as the integrated developement environment for the website and to deploy the website.
+  - [Github](https://github.com/) - Github was used to host the project through Github pages.
+
 # Testing and bugs
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
@@ -55,14 +64,26 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ConorG180/rushdown-mma-gym)
 
- # Technologies used
- The following technologies were used in the development of this project
-  - [html](https://developer.mozilla.org/en-US/docs/Web/HTML) - html was used to apply the structure and to create the elements of each webpage in the project.
-  - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - CSS was used to style each page of the project and controls the layout, color scheme, animations, hover-effects and image-sizing.
-  - [Git](https://git-scm.com/) - Git was used for version control throughout this project.
-  - [Balsamiq](https://balsamiq.com/) - Balsamiq was used to create wireframes at the beginning of the project and aided in visualising ideas and features of the website
-  - [Gitpod](https://www.gitpod.io/) - Gitpod was used as the integrated developement environment for the website and to deploy the website.
-  - [Github](https://github.com/) - Github was used to host the project through Github pages.
+# Credits
+## Content
+The sources below were used when trying to solve intricate problems within the programme and played a solid role in helping me to build this project.
+ - [w3schools.com](https://www.w3schools.com/) was used as a learning resource and helped me with html and CSS.
+ - Kevin Powell's [Youtube Channel](https://www.youtube.com/kepowob) was used as a learning resource and helped me with html and CSS .
+ - [Stack Overflow](https://stackoverflow.com/) was used as a learning resource and helped me with html and CSS.
+ - [ColorSpace](https://mycolor.space/) aided me in designing a color theme for the website.
+ - [Balsamiq](https://balsamiq.com/) helped me to design the wireframes for the project
+ - [Google Fonts](https://fonts.google.com/) supplied the fonts used throughout the website.
+ - [Font Awesome](https://fontawesome.com/) supplied the icons used throughout the website.
+## Media
+All images and videos used in the project came from the following sources:
+- [Pexels](https://www.pexels.com/)
+- [Unsplash](https://unsplash.com/)
+- [Stockvault](https://www.stockvault.net/)
+## Acknowledgements
+I want to thank the following people and companies for their help in providing solid technical support whilst developing this project.
+ - Tim Nelson (Code Institute mentor)
+ - [Code Institute](https://codeinstitute.net/ie/)
+
 
 
 
