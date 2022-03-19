@@ -35,6 +35,9 @@ Before starting development on the project, Balsamiq was used to form wireframes
 <img width ="400" height = "700" alt ="sign-up.html wireframe wireframe" src ="assets/images/sign-up.html-wireframe.png">
 <img width ="400" alt ="gallery.html wireframe" src ="assets/images/gallery.html-wireframe.png">
 
+# Testing and bugs
+For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
 
 
 
