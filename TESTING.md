@@ -3,9 +3,7 @@
 ## Browser Compatability
 Testing of the website was carried out in Firefox, Microsoft Edge, Opera and Google Chrome. The website seemed to work without on any issues on the above browsers. However, some older versions of firefox in particular may not support the "aspect-ratio" property of CSS which is used on images, which caused some bugs. However, new versions of Firefox do support aspect-ratio, so this should not be an issue for most users.
 
-## Code Validation and identified bugs
-
-# Testing and bugs
+# Testing and identified bugs
 The following tools and technologies were used to test this project:
  ## Lighthouse
   Lighthouse was used to test and audit the website across four main areas; performance, accessibility, best practices, and SEO. All pages of the document were tested, and some minor changes were made to each page when bugs were found. After retesting each page, all accessibility scores were at least 95% or higher with the exception of confirmation.html. Some significant bugs that were found in lighthouse testing and their solutions are listed below.
@@ -21,7 +19,7 @@ The following tools and technologies were used to test this project:
 -   Another issue was discovered with the page's "refresh" meta tag, used to redirect the user back to the homepage. This was shown to lower the accessibility score on lighthouse's audit. 
     -  A solution to this problem would be to use Javascript. At the beginning of this project, it was decided that it would be made strictly using html and CSS. However, this may be solved in an upcoming version with the use of Javascript.
  
-#### lighthouse score after retesting:
+#### Lighthouse score after retesting:
 <img width="600" alt ="lighthouse testing image" src ="assets/images/lighthouse-testing-rushdown.png">
 
   ## W3 html validator
@@ -68,15 +66,12 @@ W3 html validator was used on each html document within the project to confirm t
  <img width="400" height="175" alt ="W3C validator styles.css testing image after bugs" src ="assets/images/styles.css-fixed-from-w3c-validator.png">
 
 # Responsiveness
-##Amiresponsive
+## Amiresponsive
   Amiresponsive is a website which was used to test how the website will appear across different devices.
 - Whilst testing with amiresponsive, one element of the website seemed to portray a negative user experience; the scrollbar. Whilst being necessary, it was deemed to be unesthetic.
   - To fix this, the scrollbar was hidden, but it's functionality was kept.
   #### Amiresponsive screenshots:
 <img width ="1000" alt ="image showing responsiveness of site across multiple devices" src ="assets/images/rushdown-amiresponsive-image.png">
 
-
-## User Story Tests
-
-## Unfixed Bugs
+# Unfixed Bugs
 There are no unfixed bugs that I am aware of.
