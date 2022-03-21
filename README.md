@@ -1,9 +1,40 @@
-<img width ="1000" alt ="RushdownLogo" src ="assets/images/rushdown-banner.png"> 
+<img width ="1000" alt ="RushdownLogo" src ="assets/images/rushdown-banner.png">  
+
 # Table Of Contents
+- [Table Of Contents](#table-of-contents)
+- [Rushdown](#rushdown)
+- [UX design](#ux-design)
+  - [Color scheme](#color-scheme)
+  - [Layout](#layout)
+  - [Typography](#typography)
+  - [Wireframes](#wireframes)
+- [Features](#features)
+  - [Existing features](#existing-features)
+    - [Header and navigation](#header-and-navigation)
+      - [**Images**](#images)
+    - [Footer](#footer)
+      - [**Images**](#images-1)
+    - [Homepage(index.html)](#homepageindexhtml)
+      - [**Images**](#images-2)
+    - [Gallery (gallery.html)](#gallery-galleryhtml)
+      - [**Images**](#images-3)
+    - [Sign up page (sign-up.html)](#sign-up-page-sign-uphtml)
+      - [**Images**](#images-4)
+    - [Confirmation page (confirmation.html)](#confirmation-page-confirmationhtml)
+      - [**Images**](#images-5)
+  - [Future features](#future-features)
+- [Testing and bugs](#testing-and-bugs)
+- [Technologies used](#technologies-used)
+- [Deployment](#deployment)
+  - [Local Deployment](#local-deployment)
+- [Credits](#credits)
+  - [Content](#content)
+  - [Media](#media)
+  - [Acknowledgements](#acknowledgements)
 
 # Rushdown 
 The sport of mixed martial arts has exploded in popularity in recent years. It is clear that there is a growing demand to participate and learn about the sport. Various famous fighters have emerged from Ireland in the past few years, including "The Notorious" Conor Mcgregor, along with other reputable fighters such as Normin Parke and Joe Duffy. Rushdown MMA attempts to supply this demand and offer everyone from MMA enthusiasts to professional UFC stars a place to train and improve upon their technique. This project aims to create a website for the company, and showcase how it can help the MMA community improve their skills, fitness and technique.  
-The full **[Rushdown](https://conorg180.github.io/rushdown-mma-gym/index.html)** website can be seen here.
+The full **[Rushdown](https://conorg180.github.io/rushdown-mma-gym/index.html)** website can be seen here.  
 <img width ="1000" alt ="image showing responsiveness of site across multiple devices" src ="assets/images/rushdown-amiresponsive-image.png">
 # UX design
 The website is designed so that the user can easily understand and process what each webpage's main theme is with minimal effort and in a short amount of time. For this reason, the webpages are not overcrowded with information that may deemed to be irrelevant. It's design, whilst aesthetic, was in fact made to be minimalist. Fonts and colors were chosen with accessibility being the top priority, but whilst also having a visually-appealing quality to them.  
@@ -137,8 +168,3 @@ All images and videos used in the project came from the following sources:
 I want to thank the following people and companies for their help in providing solid technical support whilst developing this project.
  - Tim Nelson (Code Institute mentor)
  - [Code Institute](https://codeinstitute.net/ie/)
-
-
-
-
-
