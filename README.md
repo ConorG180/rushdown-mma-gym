@@ -31,7 +31,6 @@
   - [Content](#content)
   - [Media](#media)
   - [Acknowledgements](#acknowledgements)
-
 # Rushdown 
 The sport of mixed martial arts has exploded in popularity in recent years. It is clear that there is a growing demand to participate and learn about the sport. Various famous fighters have emerged from Ireland in the past few years, including "The Notorious" Conor Mcgregor, along with other reputable fighters such as Normin Parke and Joe Duffy. Rushdown MMA attempts to supply this demand and offer everyone from MMA enthusiasts to professional UFC stars a place to train and improve upon their technique. This project aims to create a website for the company, and showcase how it can help the MMA community improve their skills, fitness and technique.  
 The full **[Rushdown](https://conorg180.github.io/rushdown-mma-gym/index.html)** website can be seen here.  
@@ -87,7 +86,7 @@ Like the header, the footer is designed to remain consistent in it's style throu
 The homepage is the first page that the user will see, and so, it is vital that this page provides a positive and intuitive user experience. The homepage is designed to show the core information about the gym that the user will want to know. 
 - Included is a description of each gym class that the gym offers, along with a sign-up button within each class card so that the user can easily access the sign-up page.  
 - There is also an about us section, which allows the user to read about how the gym was formed and about it's owner.
-- A gym tour was designed into the homepage to allow the user to instantly get a feel for what the gym looks like on the inside. controls were input so that the user can pause, rewind and skip through the video as the please.  
+- A gym tour was designed into the homepage to allow the user to instantly get a feel for what the gym looks like on the inside. controls were input so that the user can pause, rewind and skip through the video as the please.   
   #### **Images**  
     <img width="800" alt="" src="assets/images/feature-image-gymcards.png">
     <img width="800" alt="" src="assets/images/feature-image-about-us.png">
@@ -96,7 +95,7 @@ The homepage is the first page that the user will see, and so, it is vital that 
 The gallery page within the website aims to showcase the true, raw images of the gym and it's various aspects, themes and principals.
 - Images in the gallery showcase classes, competitions, comradery amongst teammates, the physical features of the gym, the instructors, and various sparring sessions amongst members.
 - The gallery also includes various features such as captions which appear on the images when hovering, and the ability to click on images to view them full size in a different tab.
-- Different aspect ratios were applied to different images (By way of CSS classes) To allow certain images to appear in their natural ratio (some images may be portrait, landscape, or square etc). By doing this, images come across as more aesthetic to the user and it minimises the effect of images being cut off/cropped.   
+- Different aspect ratios were applied to different images (By way of CSS classes) To allow certain images to appear in their natural ratio (some images may be portrait, landscape, or square etc). By doing this, images come across as more aesthetic to the user and it minimises the effect of images being cut off/cropped.    
   #### **Images**  
     <img width="800" alt="" src="assets/images/feature-image-gallery.png">
 
@@ -115,9 +114,9 @@ The confirimation page is the most simple of all the pages built in this project
 
 ## Future features
 There are some features which I believe could be a good idea to implement in the future, along with some other features which could be rebuilt to be better.
-- In the confirmation.html page, it may be a good idea to rebuild the redirect feature. At the moment, a "refresh" type meta tag is being used to redirect the user back to the homepage. However, This has slightly lowered the accessibility of the page acording to lighthouse. It is possible that Javascript may be a better alternative to achieve this outcome, as doing so would increase the accessibility score of the page.
-- A "news" page for the website which shows articles/social media posts related with the gym, upcoming events, and member's competition results may be a good page to implement.
-- A timetable outlining the gym's class schedule and which instructors are teaching the class could be a great feature to design. The timetable could also use a color-coded system to highlight the difficulty level of the class, such as beginner, intermediate, advanced etc.
+- In the confirmation.html page, it may be a good idea to rebuild the redirect feature. At the moment, a "refresh" type meta tag is being used to redirect the user back to the homepage. However, This has slightly lowered the accessibility of the page acording to lighthouse. According to lighthouse, it is possible that Javascript may be a better alternative to achieve this outcome, as doing so would not decrease the accessibility score of the page.
+- A "news" page for the website which shows articles/social media posts related with the gym, upcoming events, and member's competition results may be a good feature to implement.
+- A timetable outlining the gym's class schedule and which instructors are teaching each class could be a great feature to design. The timetable could also use a color-coded system to highlight the difficulty level of the class, such as beginner, intermediate, advanced etc.
 - Member's accounts. This feature would allow members to create an account and log in, which may give them extra features such as being able to book a class in advance and book personal training/combat sessions with specific gym instructors.
 
 # Testing and bugs
@@ -145,7 +144,7 @@ In order to make a local copy of this project, you can clone it. In your IDE Ter
 
 - `git clone https://github.com/ConorG180/rushdown-mma-gym.git`
 
-Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.  
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ConorG180/rushdown-mma-gym)
 
