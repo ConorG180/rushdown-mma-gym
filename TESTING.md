@@ -55,8 +55,8 @@ W3 html validator was used on each html document within the project to confirm t
   - Video mute and autoplay attributes were included on a source element in index.html for the gym video tour. 
     - This is incorrect html code and it was removed.
  #### index.html screenshots:  
- <img width="325" height="400" alt ="W3 validator index.html testing image before bugs" src ="assets/images/index.html-bugs-from-w3-validator.png">
- <img width="325" height="400" alt ="W3 validator index.html testing image after bugs" src ="assets/images/index.html-fixed-from-w3-validator.png">  
+ <img width="700" height="400" alt ="W3 validator index.html testing image before bugs" src ="assets/images/index.html-bugs-from-w3-validator.png">
+ <img width="700" height="400" alt ="W3 validator index.html testing image after bugs" src ="assets/images/index.html-fixed-from-w3-validator.png">  
 
   #### **gallery.html** 
   - The gallery-container within gallery.html was actually a section element, which needs to include a header. 
@@ -64,7 +64,7 @@ W3 html validator was used on each html document within the project to confirm t
   
   #### gallery.html screenshots:
   <img width="525" height="100" alt ="W3 validator gallery.html testing image before bugs" src ="assets/images/gallery.html-bugs-from-w3-validator.png">
- <img width="425" height="500" alt ="W3 validator gallery.html testing image after bugs" src ="assets/images/gallery.html-fixed-from-w3-validator.png">  
+ <img width="700" height="400" alt ="W3 validator gallery.html testing image after bugs" src ="assets/images/gallery.html-fixed-from-w3-validator.png">  
 
   #### **sign-up.html** 
   - There was a "for" attribute on the medical-history label which didn't match it's id counterpart's value in the textarea element.
@@ -72,13 +72,13 @@ W3 html validator was used on each html document within the project to confirm t
   - Furthermore, the gender select element needed to have it's first element with an empty string in it's "value" attribute.
     - The first option in the gender select element was changed to a "Choose" option, which is not selectable. It simply gives directions to the user to choose an option from the list.
   #### sign-up.html screenshots:
-  <img width="725" height="150" alt ="W3 validator sign-up.html testing image before bugs" src="assets/images/sign-up.html-bugs-from-w3-validator.png">
- <img width="425" height="500" alt ="W3 validator sign-up.html testing image after bugs" src ="assets/images/sign-up.html-fixed-from-w3-validator.png">
+  <img width="725" height="300" alt ="W3 validator sign-up.html testing image before bugs" src="assets/images/sign-up.html-bugs-from-w3-validator.png">
+ <img width="550" height="500" alt ="W3 validator sign-up.html testing image after bugs" src ="assets/images/sign-up.html-fixed-from-w3-validator.png">
 
  #### **confirmation.html** 
   - There were no bugs found in confirmation.html.
   #### confirmation.html screenshots:
- <img width="425" height="500" alt ="W3 validator confirmation.html testing image" src ="assets/images/confirmation.html-w3-validator.png">
+ <img width="550" height="500" alt ="W3 validator confirmation.html testing image" src ="assets/images/confirmation.html-w3-validator.png">
 
   ### **W3C CSS validator**
   The W3C CSS validator was used to test the project's style.css document. 
@@ -89,8 +89,8 @@ W3 html validator was used on each html document within the project to confirm t
 - There were certain pieces of CSS code within the document which had no effect within the document.
     - These were removed from styles.css.
 #### styles.css screenshots:  
- <img width="475" height="200" alt ="W3C validator styles.css testing image before bugs" src ="assets/images/styles.css-bugs-from-w3c-validator.png">
- <img width="400" height="175" alt ="W3C validator styles.css testing image after bugs" src ="assets/images/styles.css-fixed-from-w3c-validator.png">
+ <img width="775" height="450" alt ="W3C validator styles.css testing image before bugs" src ="assets/images/styles.css-bugs-from-w3c-validator.png">
+ <img width="775" height="450" alt ="W3C validator styles.css testing image after bugs" src ="assets/images/styles.css-fixed-from-w3c-validator.png">
 
 ## Responsiveness
 ### **Amiresponsive**
